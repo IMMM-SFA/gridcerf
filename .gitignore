@@ -239,7 +239,7 @@ fabric.properties
 .DS_Store
 
 
-data/reference/
-data/source
-data/compiled
+data/gridcerf/reference/
+data/gridcerf/source
+data/gridcerf/compiled
 notebooks/template.ipynb

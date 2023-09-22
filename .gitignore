@@ -237,3 +237,9 @@ fabric.properties
 
 .idea/
 .DS_Store
+
+
+data/reference/
+data/source
+data/compiled
+notebooks/template.ipynb

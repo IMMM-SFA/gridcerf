@@ -240,6 +240,7 @@ fabric.properties
 
 
 data/gridcerf/reference/
+data/gridcerf/technology_specific/
 data/gridcerf/source
 data/gridcerf/compiled
 notebooks/template.ipynb

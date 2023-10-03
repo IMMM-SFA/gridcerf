@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>GRIDCERF Source Data Descriptions & Application Methodology</h1>
+
+<h4> Version 2.0</h4>
+<h4> Released: 10/15/23</h4>
+
+<h4> Suggested Citation</h4>
+<p><cite>Mongird, K., Vernon, C. R., Thurber, T., & Rice, J. S. (2023). 
+GRIDCERF: Geospatial Raster Input Data for Capacity Expansion Regional Feasibility (v2.0.0) 
+[Data set]. Zenodo. https://doi.org/10.5281/zenodo.8218921 </cite>
+
+<h4> Accompanying GitHub Repository</h4>
+
+The following GitHub repository contains the code used to generate the data in the GRIDCERF 
+archive: <a href="https://github.com/IMMM-SFA/gridcerf">https://github.com/IMMM-SFA/gridcerf</a> 
+<br>
+
+<h4> Acknowledgements</h4>
+
+cerf is actively developed as an open-source project as a part of the <a href="https://im3.pnnl.gov/">Integrated Multisector 
+    Multiscale Modeling (IM3)</a>  project. IM3 is a multi-institutional effort led by Pacific 
+Northwest National Laboratory and supported by the U.S. Department of Energy Office of 
+Science as part of research in MultiSector Dynamics, Earth and Environmental Systems Modeling Program.
+
+<br>
+
+<h4>License</h4>
+    BSD 2-Clause License
+    <br>
+    <p>Copyright (c) 2023, Integrated Multisector Multiscale Modeling</p>
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are met:
+    <br>
+    <ol>
+    1. Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+    <br>
+    2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+    </ol>
+    <p>
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+    SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+    CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        </p>
+<br>
+<hr>
+
+
+<h2> Table of Contents</h2>
+<ol class="toc-list">
+
+    <li>
+        <a href="#link_to_heading">
+          <span class="title">Introduction</span>
+        </a>
+    </li>
+    <li>
+      <a href="#link_to_heading">
+        <span class="title">GRIDCERF Technologies</span>
+      </a>
+    <li>
+      <a href="#link_to_heading">
+        <span class="title">Common Data Layers</span>
+      </a>
+    </li>
+    <li>
+        <a href="#link_to_heading">
+          <span class="title">Technology-Specific Data Layers</span>
+        </a>
+      </li>
+    <li>
+        <a href="#link_to_heading">
+          <span class="title">Compiled Layers</span>
+        </a>
+      </li>
+      <ol>
+        <!-- subsection items -->
+      </ol>
+    </li>
+  </ol>
+
+  <br>
+  <hr>
+<h2>1. Introduction</h2>
+
+<p>Climate change, energy system transitions, and socioeconomic change are compounding influences affecting the 
+growth of electricity demand. While energy efficiency initiatives and distributed resources can address a significant 
+amount of this demand, the United States will likely still need new utility-scale generation resources. The energy sector 
+uses capacity expansion planning models to determine the aggregate need for new generation, but these models are typically 
+at the state or regional scale and are not equipped to address the wide range of location- and technology-specific issues 
+that are increasingly a factor in power plant siting. To help address these challenges, we have developed the Geospatial 
+Raster Input Data for Capacity Expansion Regional Feasibility (GRIDCERF) data package, a high-resolution product to 
+evaluate siting suitability for renewable and non-renewable power plants in the conterminous United States. GRIDCERF 
+offers 265 suitability layers for use with 56 power plant technology configurations in a harmonized format that can be 
+easily ingested by geospatially-enabled modeling software. It also provides pre-compiled technology-specific suitability 
+layers and allows for user customization to robustly address science objectives when evaluating varying future conditions.
+</p>
+<hr>
+<h2>2. GRIDCERF Technologies</h2>
+<p> Composite suitability rasters are available for the following technology types. To see which suitability layers are applied to each 
+    technology and the composite technology suitability raster file, see Section 5. </p>
+<h3>Biomass</h3>
+<ul>
+
+    <li> Biomass Conventional Carbon Capture Sequestration (CCS) Dry Cooling </li>
+    <li> Biomass Conventional CCS Oncethrough Cooling </li>
+    <li> Biomass Conventional CCS Recirculating-Seawater Cooling </li>
+    <li> Biomass Conventional CCS Recirculating Cooling </li>
+    <li> Biomass Conventional No-CCS Dry Cooling </li>
+    <li> Biomass Conventional No-CCS Oncethrough Cooling </li>
+    <li> Biomass Conventional No-CCS Pond Cooling </li>
+    <li> Biomass Conventional No-CCS Recirculating-Seawater Cooling </li>
+    <li> Biomass Conventional No-CCS Recirculating Cooling </li>
+    <li> Biomass Integrated Gasification Combined Cycle (IGCC) CCS Dry Cooling </li>
+    <li> Biomass IGCC CCS Oncethrough Cooling </li>
+    <li> Biomass IGCC CCS Recirculating Cooling </li>
+    <li> Biomass IGCC CCS Recirculating-Seawater Cooling </li>
+    <li> Biomass IGCC No-CCS Dry Cooling </li>
+    <li> Biomass IGCC No-CCS Oncethrough Cooling </li>
+    <li> Biomass IGCC No-CCS Recirculating Cooling </li>
+    <li> Biomass IGCC No-CCS Recirculating-Seawater Cooling </li>
+</ul>
+<h3>Coal</h3>
+<ul>
+    <li> Coal Conventional CCS Dry Cooling </li>
+    <li> Coal Conventional CCS Oncethrough Cooling </li>
+    <li> Coal Conventional CCS Recirculating-Seawater Cooling </li>
+    <li> Coal Conventional CCS Recirculating Cooling </li>
+    <li> Coal Conventional No-CCS Dry Cooling </li>
+    <li> Coal Conventional No-CCS Oncethrough Cooling </li>
+    <li> Coal Conventional No-CCS Pond Cooling </li>
+    <li> Coal Conventional No-CCS Recirculating-Seawater Cooling </li>
+    <li> Coal Conventional No-CCS Recirculating Cooling </li>
+    <li> Coal IGCC CCS Dry Cooling </li>
+    <li> Coal IGCC CCS Oncethrough Cooling </li>
+    <li> Coal IGCC CCS Recirculating-Seawater Cooling </li>
+    <li> Coal IGCC CCS Recirculating Cooling </li>
+    <li> Coal IGCC No-CCS Dry Cooling </li>
+    <li> Coal IGCC No-CCS Oncethrough Cooling </li>
+    <li> Coal IGCC No-CCS Recirculating-Seawater Cooling </li>
+    <li> Coal IGCC No-CCS Recirculating Cooling </li>
+</ul>
+<h3>Geothermal</h3>
+<ul>
+    <li> Geothermal centralized enhanced Dry-Hybrid Cooling </li>
+<li> Geothermal centralized enhanced Recirculating Cooling </li>
+<li> Geothermal centralized enhanced Dry-Hybrid Cooling </li>
+<li> Geothermal centralized enhanced Recirculating Cooling </li>
+</ul>
+<h3>Natural Gas</h3>
+<ul>
+    <li> Natural Gas Combined Cycle (CC) CCS Dry Cooling </li>
+    <li> Natural Gas CC CCS Oncethrough Cooling </li>
+    <li> Natural Gas CC CCS Recirculating Cooling </li>
+    <li> Natural Gas CC CCS Recirculating-Seawater Cooling </li>
+    <li> Natural Gas CC No-CCS Dry Cooling </li>
+    <li> Natural Gas CC No-CCS Oncethrough Cooling </li>
+    <li> Natural Gas CC No-CCS Pond Cooling </li>
+    <li> Natural Gas CC No-CCS Recirculating Cooling </li>
+    <li> Natural Gas CC No-CCS Recirculating-Seawater Cooling </li>
+    <li> Natural Gas Turbine No-CCS </li>
+</ul>
+<h3>Nuclear</h3>
+<ul>
+    <li> Nuclear Gen 3 AP1000 Oncethrough Cooling </li>
+    <li> Nuclear Gen 3 AP1000 Pond Cooling </li>
+    <li> Nuclear Gen 3 AP1000 Recirculating Cooling </li>
+    <li> Nuclear Gen 3 AP1000 Recirculating-Seawater Cooling </li>
+    <li> Nuclear Gen 3 Small Modular Reactor (SMR) Oncethrough Cooling </li>
+    <li> Nuclear Gen 3 SMR Pond Cooling </li>
+    <li> Nuclear Gen 3 SMR Recirculating Cooling </li>
+    <li> Nuclear Gen 3 SMR Recirculating-Seawater Cooling </li>
+    <li> Nuclear Gen 2 Light Water Reactor (LWR) Oncethrough Cooling </li>
+    <li> Nuclear Gen 2 LWR Pond Cooling </li>
+    <li> Nuclear Gen 2 LWR Recirculating Cooling </li>
+    <li> Nuclear Gen 2 LWR Recirculating-Seawater Cooling </li>
+</ul>
+
+<h3>Refined Liquids (Oil)</h3>
+<ul>
+    <li> Refinedliquids CC CCS Dry Cooling </li>
+    <li> Refinedliquids CC CCS Oncethrough Cooling </li>
+    <li> Refinedliquids CC CCS Recirculating-Seawater Cooling </li>
+    <li> Refinedliquids CC CCS Recirculating Cooling </li>
+    <li> Refinedliquids CC No-CCS Dry Cooling </li>
+    <li> Refinedliquids CC No-CCS Oncethrough Cooling </li>
+    <li> Refinedliquids CC No-CCS Recirculating-Seawater Cooling </li>
+    <li> Refinedliquids CC No-CCS Recirculating Cooling </li>
+    <li> Refinedliquids Turbine No-CCS </li>
+</ul>
+<h3>Solar CSP</h3>
+<p> Individual technology suitability files are created for the technologies below at the following capacity factors: 24%,
+    26%, 28%, 30%, 32%, 34%, 36%, 38%, 40%, 42%, 44%, and 46% </p>
+<ul>
+    <li> Solar Concentrating Solar Power (CSP) Centralized Dry-Hybrid Cooling </li>
+    <li> Solar CSP Centralized Recirculating Cooling </li>
+</ul>
+<h3>Solar PV</h3>
+<p> Individual technology suitability files are created for the technology below at the following capacity factors: 6%,
+    8%, 10%, 12%, 14%, 16%, 18%, and 20% </p>
+<ul>
+    <li> Solar Photovoltaic (PV) Centralized </li>
+</ul>
+
+<h3>Onshore Wind</h3>
+<p> Individual technology suitability files are created for the technologies below at the following capacity factors: 10%,
+    15%, 20%, 25%, 30%, 35%, 40%, 45%, and 50%</p>
+<ul>
+<li> Wind Onshore Hub Height 80m</li>
+<li> Wind Onshore Hub Height 100m</li>
+<li> Wind Onshore Hub Height 120m</li>
+</ul>
+<h3>Offshore Wind</h3>
+<p> Individual technology suitability files are created for the technologies below at the following capacity factors: 25%, 30%,
+    35%, 40%, 45%, 50%, 55%, and 60%</p>
+<ul>
+    <li> Wind Offshore Hub Height 100m</li>
+    <li> Wind Offshore Hub Height 140m</li>
+    <li> Wind Offshore Hub Height 160m</li>
+    </ul>
+
+<br> 
+<hr>
+<h2>3. Common Data Layers</h2>
+
+<p>Common Data Layers are those which are applied to all thermoelectric technology types.</p>
+
+
+<br>
+<br>
+
+<h3>US Bureau of Indian Affairs Surface Management Agency Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_bia_surface_management_agency_areas.tif
+<br>
+<b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+<br>
+<b><u>Description from Source:</u></b>
+The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/27/2023
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_BIA layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies except solar, wind, and geothermal.
+<br>
+<b><u>Application Methodology:</u></b> This layer includes all public lands managed by US Bureau of Indian Affairs.
+<br>
+<b><u>Methodology References:</u></b> <cite></cite>
+
+<br>
+<br>
+
+
+
+<h3>US Bureau of Land Management National Monuments</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_blm_nlcs_national_monument_conus.tif
+<br>
+<b><u>Source Data Title:</u></b> BLM National Landscape Conservation System (NLCS) Wilderness Areas Polygons
+<br>
+<b><u>Description from Source:</u></b>
+This feature class includes Cooperative Management and Protection Areas, Forest Reserves, National Conservation Areas, National Monuments, and Outstanding Natural Areas. Descriptions of each type of polygon found in this feature class can be found on Page 21 of the National Landscape Conservation System (NLCS) Implementation Guidelines (Version 1.1). The Bureau of Land Management's National Conservation Lands include 19 national monuments in nine western states. These national monuments encompass landscapes of tremendous beauty and diversity, ranging from rugged California coastline to vividly-hued desert canyons. The Antiquities Act of 1906 grants the President authority to designate national monuments in order to protect “objects of historic or scientific interest.” National conservation areas (NCAs) and similarly designated lands are designated by Congress to conserve, protect, enhance, and manage public lands for the benefit and enjoyment of present and future generations. The Bureau of Land Management's National Conservation Lands include 16 NCAs and five similarly designated lands in ten states. These lands feature exceptional scientific, cultural, ecological, historical, and recreational values. They differ tremendously in landscape and size, varying from the coastal beauty of California's 18-acre Piedras Blancas Light Station Outstanding Natural Area to the rugged desert vistas of Nevada's 1.2 million acre Black Rock Desert-High Rock Canyon Emigrant Trails NCA.  This polygon feature class represents the spatial extent and boundaries of the BLM National Landscape Conservation System (NLCS) National Monuments, National Conservation Areas and Similar Designations. This dataset is a subset of the official national dataset, containing features and attributes intended for public release and has been optimized for online map service performance. The Implementation Guide represents the official national dataset from which this dataset was derived.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href=https://arcg.is/1u9DvO1>https://arcg.is/1u9DvO1</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/18/23
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National NLCS National Monuments, National Conservation Areas and Similar Designations Polygons. U.S. Department of Interior Bureau of Land Management Geospatial Business Plaform https://gbp-blm-egis.hub.arcgis.com/datasets/BLM-EGIS::blm-natl-nlcs-national-monuments-national-conservation-areas-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies
+<br>
+<b><u>Application Methodology:</u></b> National Monuments are included in US BLM's National Conservation Landas which are preserved and protected from development.
+<br>
+<b><u>Methodology References:</u></b> <cite>US BLM, 2023. National Conservation Lands. US. Department of the Interior. Available at: https://www.blm.gov/programs/national-conservation-lands (accessed 10/3/23)</cite>
+
+<br>
+<br>
+
+<h3>US Bureau of Land Management Outstanding Natural Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_blm_nlcs_outstanding_natural_areas_conus.tif
+<br>
+<b><u>Source Data Title:</u></b> BLM NLCS Outstanding Natural Areas
+<br>
+<b><u>Description from Source:</u></b>
+Outstanding Natural Areas of the National Landscape Conservation System.  BLM--compiled from data provided by state offices; Modified by The Wilderness Society (TWS) to add URLs for ONA web sites.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href=https://hub.arcgis.com/datasets/Wilderness::nlcs-outstanding-natural-areas/about>https://hub.arcgis.com/datasets/Wilderness::nlcs-outstanding-natural-areas/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/18/23
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Hartger, P. NLCS Outstanding Natural Areas. ArcGIS Hub https://hub.arcgis.com/datasets/Wilderness::nlcs-outstanding-natural-areas/about (2017).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies
+<br>
+<b><u>Application Methodology:</u></b> Outstanding Natural Areas are included in US BLM's National Conservation Lands which are preserved and protected from development.
+<br>
+<b><u>Methodology References:</u></b> <cite>US BLM, 2023. National Conservation Lands. US. Department of the Interior. Available at: https://www.blm.gov/programs/national-conservation-lands (accessed 10/3/23)</cite>
+
+<br>
+<br>
+
+
+<h3>US Bureau of Land Management Surface Management Agency Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_blm_surface_management_agency_areas.tif
+<br>
+<b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+<br>
+<b><u>Description from Source:</u></b>
+The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/27/2023
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_BLM layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies except solar, wind, and geothermal.
+<br>
+<b><u>Application Methodology:</u></b>
+<br>
+<b><u>Methodology References:</u></b> <cite></cite>
+<br>
+<br>
+
+
+
+
+<h3>US Bureau of Reclamation Surface Management Agency Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_bor_surface_management_agency_areas.tif
+<br>
+<b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+<br>
+<b><u>Description from Source:</u></b>
+The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/27/2023
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_BOR layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies except solar, wind, and geothermal.
+<br>
+<b><u>Application Methodology:</u></b> This layer includes all public lands managed by US Bureau of Reclamation.
+<br>
+<b><u>Methodology References:</u></b> <cite></cite>
+
+<br>
+<br>
+
+
+<h3>US Department of Defense Surface Management Agency Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_dod_surface_management_agency_areas.tif
+<br>
+<b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+<br>
+<b><u>Description from Source:</u></b>
+The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/27/2023
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_DOD layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+
+This layer focuses on areas that are managed by the US Department of Defense and includes military installations and training areas.
+
+<br>
+<b><u>Applied to:</u></b> All technologies.
+<br>
+<b><u>Application Methodology:</u></b>
+<br>
+<b><u>Methodology References:</u></b> <cite></cite>
+
+
+
+<br>
+<br>
+
+
+<h3>US Fish and Wildlife Service Surface Management Agency Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_fws_surface_management_agency_areas.tif
+<br>
+<b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+<br>
+<b><u>Description from Source:</u></b>
+The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/27/2023
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_FWS layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies except solar, wind, and geothermal.
+<br>
+<b><u>Application Methodology:</u></b> This layer includes all public lands managed by US Fish and Wildlife Service.
+<br>
+<b><u>Methodology References:</u></b> <cite></cite>
+
+
+
+<br>
+<br>
+
+<h3>US Forest Service Surface Management Agency Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_usfs_surface_management_agency_areas.tif
+<br>
+<b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+<br>
+<b><u>Description from Source:</u></b>
+The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/27/2023
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_USFS layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies except solar, wind, and geothermal.
+<br>
+<b><u>Application Methodology:</u></b>
+<br>
+<b><u>Methodology References:</u></b> <cite></cite>
+
+<br>
+<br>
+
+
+<h3>Local Surface Management Agency Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_local_surface_management_agency_areas.tif
+<br>
+<b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+<br>
+<b><u>Description from Source:</u></b>
+The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/27/2023
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_LOCAL layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies except solar, wind, and geothermal.
+<br>
+<b><u>Application Methodology:</u></b> This layer includes locally managed public lands.
+<br>
+<b><u>Methodology References:</u></b> <cite></cite>
+
+<br>
+<br>
+
+
+<h3>US National Park Service Surface Management Agency Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_nps_surface_management_agency_areas.tif
+<br>
+<b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+<br>
+<b><u>Description from Source:</u></b>
+The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/27/2023
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_USFS layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies.
+<br>
+<b><u>Application Methodology:</u></b> This layer represents all areas managed by the national park service.
+<br>
+<b><u>Methodology References:</u></b> <cite></cite>
+
+<br>
+<br>
+
+
+
+<br>
+<br>
+<h3>State Surface Management Agency Areas</h3>
+<b><u>GRIDCERF Layer Name:</u></b> gridcerf_state_surface_management_agency_areas.tif
+<br>
+<b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+<br>
+<b><u>Description from Source:</u></b>
+The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/27/2023
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_STATE layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies except solar, wind, and geothermal.
+<br>
+<b><u>Application Methodology:</u></b> This layer includes state managed recreation sites, marine parks, state parks, and other state-managed areas.
+<br>
+<b><u>Methodology References:</u></b> <cite></cite>
+<br>
+<br>
+
+
+
+
+<h3>TITLE</h3>
+<b><u>GRIDCERF Layer Name:</u></b>
+<br>
+<b><u>Source Data Title:</u></b>
+<br>
+<b><u>Description from Source:</u></b>
+
+<br>
+<b><u>Source Data Downloaded from:</u></b> <a href=></a>
+<br>
+<b><u>Source Data Accessed on:</u></b>  7/18/23
+<br>
+<b><u>Source Data Citation:</u></b>
+<cite></cite>
+<br>
+<b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. No additional modifications or buffers are applied.
+<br>
+<b><u>Applied to:</u></b> All technologies
+<br>
+<b><u>Application Methodology:</u></b> National Monuments are included in US BLM's National Conservation Landas which are preserved and protected from development.
+<br>
+<b><u>Methodology References:</u></b> <cite>US BLM, 2023. National Conservation Lands. US. Department of the Interior. Available at: https://www.blm.gov/programs/national-conservation-lands (accessed 10/3/23)</cite>
+
+<br>
+
+
+
+<hr>
+
+<h2>4. Technology-Specific Data Layers</h2>
+
+<hr>
+
+<h2>Compiled Layers</h2>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>

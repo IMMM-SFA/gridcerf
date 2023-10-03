@@ -245,3 +245,4 @@ data/gridcerf/source
 data/gridcerf/compiled
 notebooks/template.ipynb
 *.tif
+*.xml

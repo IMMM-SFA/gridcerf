@@ -244,3 +244,4 @@ data/gridcerf/technology_specific/
 data/gridcerf/source
 data/gridcerf/compiled
 notebooks/template.ipynb
+*.tif

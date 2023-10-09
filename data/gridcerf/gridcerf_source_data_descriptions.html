@@ -479,33 +479,26 @@ layers and allows for user customization to robustly address science objectives 
 
   <br>
   <div id="dod_sma">
-    <h3>US Department of Defense Surface Management Agency Areas</h3>
-    <b><u>GRIDCERF Layer Name:</u></b> gridcerf_dod_surface_management_agency_areas.tif
+    <h3>US Department of Defense Military Installations, Ranges, and Training Areas </h3>
+    <b><u>GRIDCERF Layer Name:</u></b> gridcerf_dod_military_installations_conus.tif
     <br>
-    <b><u>Source Data Title:</u></b>Bureau of Land Management (BLM) National Surface Management Agency (SMA) Area Polygons
+    <b><u>Source Data Title:</u></b>Military Installations, Ranges, and Training Areas
     <br>
     <b><u>Description from Source:</u></b>
-    The purpose of this dataset is to fulfill the public and Government's need to know what agency is managing Federal land in a given area, and for use by BLM Staff for use in analysis and reports. This dataset is useful as a tool to determine and illustrate the boundaries of a particular Federal agency's "managing" area and to quantify these areas in terms of geographic acreage. The Surface Management Agency (SMA) Geographic Information System (GIS) dataset depicts Federal land for the United States and classifies this land by its active Federal surface managing agency. The SMA feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details. The SMA Withdrawals feature class covers the continental United States, Alaska, Hawaii, Puerto Rico, Guam, American Samoa and the Virgin Islands. A Federal SMA Withdrawal is defined by formal actions that set aside, withhold, or reserve Federal land by statute or administrative order for public purposes. A withdrawal creates a title encumbrance on the land. Withdrawals must accomplish one or more of the following: A. Transfer total or partial jurisdiction of Federal land between Federal agencies. B. Close (segregate) Federal land to operation of all or some of the public land laws and/or mineral laws. C. Dedicate Federal land to a specific public purpose. There are four major categories of formal withdrawals: (1) Administrative, (2) Presidential Proclamations, (3) Congressional, and (4) Federal Power Act (FPA) or Federal Energy Regulatory Commission (FERC) Withdrawals. These SMA Withdrawals will include the present total extent of withdrawn areas rather than all of the individual withdrawal actions that created them over time. A Federal SMA agency refers to a Federal agency with administrative jurisdiction over the surface of Federal lands. Jurisdiction over the land is defined when the land is either: Withdrawn by some administrative or legislative action, or Acquired or Exchanged by a Federal Agency. This layer is a dynamic assembly of spatial data layers maintained at various federal and local government offices. The GIS data contained in this dataset represents the polygon features that show the boundaries for Surface Management Agency and the surface extent of each Federal agency's surface administrative jurisdiction. SMA data depicts current withdrawn areas for a particular agency and (when appropriate) includes land that was acquired or exchanged and is located outside of a withdrawal area for that agency. The SMA data do not illustrate land status ownership pattern boundaries or contain land ownership attribute details.
+    This dataset, released by DoD, contains geographic information for major installations, ranges, and training areas in the United States and its territories. This release integrates site information about DoD installations, training ranges, and land assets in a format which can be immediately put to work in commercial geospatial information systems. Homeland Security/Homeland Defense, law enforcement, and readiness planners will benefit from immediate access to DoD site location data during emergencies. Land use planning and renewable energy planning will also benefit from use of this data. Users are advised that the point and boundary location datasets are intended for planning purposes only, and do not represent the legal or surveyed land parcel boundaries.
+        <br>
+    <b><u>Source Data Downloaded from:</u></b> <a href= https://catalog.data.gov/dataset/military-installations-ranges-and-training-areas> https://catalog.data.gov/dataset/military-installations-ranges-and-training-areas</a>
     <br>
-    <b><u>Source Data Downloaded from:</u></b> <a href= https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about> https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about</a>
+    <b><u>Source Data Last Updated on:</u></b> 11/21/2013
     <br>
-    <b><u>Source Data Last Updated on:</u></b> 7/6/2023
-    <br>
-    <b><u>Source Data Accessed on:</u></b>  7/27/2023
+    <b><u>Source Data Accessed on:</u></b>  10/9/2023
     <br>
     <b><u>Source Data Citation:</u></b>
-    <cite>Bureau of Land Management. BLM National Surface Management Agency Area Polygons - National Geospatial Data Asset (NGDA). Landscape Approach Data Portal https://gbp-blm-egis.hub.arcgis.com/datasets/blm-national-sma-surface-management-agency-area-polygons/about (2023).</cite>
+    <cite>US Department of Defense. Military Installations, Ranges, and Training Areas. Data.gov https://catalog.data.gov/dataset/military-installations-ranges-and-training-areas (2023).</cite>
     <br>
-    <b><u>Data Layer Methodology:</u></b> The SurfaceMgtAgy_DOD layer within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
-
-    This layer focuses on areas that are managed by the US Department of Defense and includes military installations and training areas.
-
+    <b><u>Data Layer Methodology:</u></b> The MirtaLocations_A layer corresponding to the polygon areas within the source geodatabase is separated out and reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
     <br>
     <b><u>Applied to:</u></b> All technologies.
-    <br>
-    <b><u>Application Methodology:</u></b>
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
   </div>
   <br>
 
@@ -1133,12 +1126,7 @@ layers and allows for user customization to robustly address science objectives 
 <cite></cite>
 <br>
 <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. No additional modifications or buffers are applied.
-<br>
-<b><u>Applied to:</u></b> All technologies
-<br>
-<b><u>Application Methodology:</u></b> National Monuments are included in US BLM's National Conservation Landas which are preserved and protected from development.
-<br>
-<b><u>Methodology References:</u></b> <cite>US BLM, 2023. National Conservation Lands. US. Department of the Interior. Available at: https://www.blm.gov/programs/national-conservation-lands (accessed 10/3/23)</cite>
+
 
 <br>
 
@@ -1146,8 +1134,474 @@ layers and allows for user customization to robustly address science objectives 
 
 <hr>
 <div id="technology_specific">
+<div style="margin:50px;">
 <h2>4. Technology-Specific Data Layers</h2>
 
+<br>
+  <div id="airports">
+    <h3>Airports (1, 3, & 10-mile buffer)</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_airports_1mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+    </ul>
+    <b><u>Source Data Title:</u></b>U.S. Department of Transportation (USDOT) Bureau of Transportation Statistics (BTS) - Airport Facilities
+    <br>
+    <b><u>Description from Source:</u></b>The dataset provides users with information about airport locations and attributes and can be used for national and regional analysis applications. The Aviation Facilities dataset is updated every 28 days from the Federal Aviation Administration (FAA) and is part of the U.S. Department of Transportation (USDOT)/Bureau of Transportation Statistics (BTS) National Transportation Atlas Database (NTAD). The Aviation Facilities dataset is a geographic point database of all official and operational aerodromes in the United States and U.S. Territories. Attribute data is provided on the physical and operational characteristics of the aerodrome, current usage including enplanements and aircraft operations, congestion levels and usage categories. This geospatial data is derived from the FAA's National Airspace System Resource Aeronautical Data Product. For more information about these data, please visit: https://www.faa.gov/air_traffic/flight_info/aeronav/Aero_Data/NASR_Subscription.
+    
+    <br>
+    <b><u>Source Data Downloaded from:</u></b> <a href=https://geodata.bts.gov/datasets/usdot::aviation-facilities/explore>https://geodata.bts.gov/datasets/usdot::aviation-facilities/explore</a>
+    <br>
+    <b><u>Source Data Last Updated on:</u></b> 7/14/2023
+    <br>
+    <b><u>Source Data Accessed on:</u></b>  7/20/23
+    <br>
+    <b><u>Source Data Citation:</u></b>
+    <cite>Bureau of Transportation Statistics. Aviation Facilities. Transportation.gov U.S. Department of Transportation https://geodata.bts.gov/maps/usdot::aviation-facilities (2023).</cite>
+    <br>
+    <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system. A buffer of 1, 3, and 10km are applied to separate copies of the data prior to being rasterized. No additional modifications or buffers are applied.
+  </div>
+<br>
+
+<br>
+  <div id="bia">
+    <h3>Bureau of Indian Affairs Land Area</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_bia_land_area_representations_conus.tif</li>
+    </ul>
+    <b><u>Source Data Title:</u></b>Bureau of Indian Affairs (BIA) Land Area Representations
+    <br>
+    <b><u>Description from Source:</u></b>
+    The purpose of the American Indian and Alaska Native Land Area Representation (AIAN-LAR) Geographic Information System (GIS) dataset is to depict the external extent of federal Indian reservations and the external extent of associated land held in “trust” by the United States, “restricted fee” or “mixed ownership” status for federally recognized tribes and individual Indians. This dataset includes other land area types such as Public Domain Allotments, Dependent Indian Communities and Homesteads. This GIS Dataset is prepared strictly for illustrative and reference purposes only and should not be used, and is not intended for legal, survey, engineering or navigation purposes. No warranty is made by the Bureau of Indian Affairs (BIA) for the use of the data for purposes not intended by the BIA. This GIS Dataset may contain errors. There is no impact on the legal status of the land areas depicted herein and no impact on land ownership. No legal inference can or should be made from the information in this GIS Dataset. The GIS Dataset is to be used solely for illustrative, reference and statistical purposes and may be used for government to government Tribal consultation. Reservation boundary data is limited in authority to those areas where there has been settled Congressional definition or final judicial interpretation of the boundary. Absent settled Congressional definition or final judicial interpretation of a reservation boundary, the BIA recommends consultation with the appropriate Tribe and then the BIA to obtain interpretations of the reservation boundary. The land areas and their representations are compilations defined by the official land title records of the Bureau of Indian Affairs (BIA) which include treaties, statutes, Acts of Congress, agreements, executive orders, proclamations, deeds and other land title documents. The trust, restricted, and mixed ownership land area shown here, are suitable only for general spatial reference and do not represent the federal government’s position on the jurisdictional status of Indian country. Ownership and jurisdictional status is subject to change and must be verified with plat books, patents, and deeds in the appropriate federal and state offices. Included in this dataset are the exterior extent of off reservation trust, restricted fee tracts and mixed tracts of land including Public Domain allotments, Dependent Indian Communities, Homesteads and government administered lands and those set aside for schools and dormitories. There are also land areas where there is more than one tribe having an interest in or authority over a tract of land but this information is not specified in the AIAN-LAR dataset. The dataset includes both surface and subsurface tracts of land (tribal and individually held) “off reservation” tracts and not simply off reservation “allotments” as land has in many cases been subsequently acquired in trust. These data are public information and may be used by various organizations, agencies, units of government (i.e., Federal, state, county, and city), and other entities according to the restrictions on appropriate use. It is strongly recommended that these data be acquired directly from the BIA and not indirectly through some other source, which may have altered or integrated the data for another purpose for which they may not have been intended. Integrating land areas into another dataset and attempting to resolve boundary differences between other entities may produce inaccurate results. It is also strongly recommended that careful attention be paid to the content of the metadata file associated with these data. Users are cautioned that digital enlargement of these data to scales greater than those at which they were originally mapped can cause misinterpretation. The BIA AIAN-LAR dataset's spatial accuracy and attribute information are continuously being updated, improved and is used as the single authoritative land area boundary data for the BIA mission. These data are available through the Bureau of Indian Affairs, Office of Trust Services, Division of Land Titles and Records, Branch of Geospatial Support.
+    <br>
+    <b><u>Source Data Downloaded from:</u></b> <a href=https://data.nativeland.info/gl/dataset/bureau-of-indian-affairs-land-area-representations/resource/f83449c2-bdf7-4edd-aa45-759587f3f48f>https://data.nativeland.info/gl/dataset/bureau-of-indian-affairs-land-area-representations/resource/f83449c2-bdf7-4edd-aa45-759587f3f48f</a>
+    <br>
+    <b><u>Source Data Last Updated on:</u></b> 7/20/2023
+    <br>
+    <b><u>Source Data Accessed on:</u></b>  8/1/23
+    <br>
+    <b><u>Source Data Citation:</u></b> 7/20/20
+    <cite>
+      Bureau of Indian Affairs. American Indian and Alaskan Native Land Area Representations (LAR). U.S. Department of the Interior Indian Affairs https://biamaps.doi.gov/bogs/datadownload.html (2019).
+    </cite>  <br>
+    <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system. No additional modifications or buffers are applied.
+  </div>
+<br>
+<br>
+  <div id="blm_acec">
+    <h3>US Bureau of Land Management Areas of Critical Environmental Concern</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>BLM Natl Designated Areas of Critical Environmental Concern Polygons
+        <br>
+        <b><u>Description from Source:</u></b>
+        This polygon feature class shows the spatial extent and boundaries of Areas of Critical Environmental Concern that have become officially designated by the BLM. In general, the ACEC dataset defines areas within the public lands where special management attention is required to protect and prevent irreparable damage to important historic, cultural, or scenic values, fish and wildlife resources or other natural systems or processes, or to protect life and safety from natural hazards.
+
+        This polygon feature class shows the spatial extent and boundaries of Areas of Critical Environmental Concern that have become officially designated by the BLM. These polygon features were previously in a pre-designated status (i.e. being considered as areas to be eventually designated as official ACEC designated polygons). Once these polygon feature left the Pre-Designated phase (transitioned from a Considered to Designated status), they were removed from the ACEC Pre-designated polygon feature class and placed in this ACEC Designated polygon feature class. This dataset is a subset of the official national dataset, containing features and attributes intended for public release and has been optimized for online map service performance. The Implementation Guide represents the official national dataset from which this dataset was derived.        <b><u>Source Data Downloaded from:</u></b> <a href=  https://gbp-blm-egis.hub.arcgis.com/datasets/blm-natl-designated-areas-of-critical-environmental-concern-polygons/about>  https://gbp-blm-egis.hub.arcgis.com/datasets/blm-natl-designated-areas-of-critical-environmental-concern-polygons/about</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 09/18/2023
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          US Bureau of Land Management, 2023. BLM Natl Designated Areas of Critical Environmental Concern Polygons West-Wide Wind Mapping Project Maps and Data, https://www.arcgis.com/sharing/rest/content/items/11c9e34831c7446a8202b334bc64898a/data
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+<br>
+<br>
+  <div id="drcep_wild">
+    <h3>US Burea of Land Management Desert Renewable Energy Conservation Plan (DRECP) Wildlife Allocations</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_drecp_wildlife_allocation.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+      <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Ecological Resources
+      <br>
+      <b><u>Description from Source:</u></b>
+      This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
+      <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
+      <br>
+      <b><u>Source Data Last Updated on:</u></b> 09/2016
+      <br>
+      <b><u>Source Data Accessed on:</u></b>  9/26/23
+      <br>
+      <b><u>Source Data Citation:</u></b>
+      <cite>
+        Argonne National Laboratory, 2016. Ecological Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Ecological_Resources.zip
+              </cite>  <br>
+    </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The drecp_wildlife_allocation shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+
+<br>
+  <div id="blm_historic_land">
+    <h3>US Bureau of Land Management Historic Landmarks</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_historic_parks.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Cultural Resources
+        <br>
+        <b><u>Description from Source:</u></b>
+        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 09/2016
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          Argonne National Laboratory, 2016. Cultural Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Cultural_Resources.zip
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The national_historic_landmark shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+<br>
+<br>
+  <div id="blm_historic_park">
+    <h3>US Bureau of Land Management Historic Parks</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_historic_parks.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Cultural Resources
+        <br>
+        <b><u>Description from Source:</u></b>
+        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 09/2016
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          Argonne National Laboratory, 2016. Cultural Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Cultural_Resources.zip
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The national_historic_park shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+<br>
+<br>
+  <div id="blm_nat_reg">
+    <h3>US Bureau of Land Management National Register Properties</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_national_register_property.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Cultural Resources
+        <br>
+        <b><u>Description from Source:</u></b>
+        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 09/2016
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          Argonne National Laboratory, 2016. Cultural Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Cultural_Resources.zip
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The national_register_property shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+<br>
+<br>
+  <div id="blm_solar">
+    <h3>US Bureau of Land Management Solar Development Restrictions</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_combined_solar_exclusions.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>Maps of Areas Identified in the 2012 Solar PEIS ROD
+        <br>
+        <b><u>Description from Source:</u></b>
+        The geographic information system (GIS) data files available for download below contain key spatial data for land use allocations and exclusions identified through the 2012 Solar PEIS ROD in GIS shapefile format.        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href= https://blmsolar.anl.gov/maps/solar-peis/#exclusions> https://blmsolar.anl.gov/maps/solar-peis/#exclusions</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> Unknown
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          US Bureau of Land Management, 2012. Maps of Areas Identified in the 2012 Solar PEIS ROD, https://blmsolar.anl.gov/maps/solar-peis/#exclusions
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> All features found in the shapefiles were used in the composite suitability layer except for: Slope < 5 percent, Solar Resource Potential, and layers already included in other suitability layers (e.g., national trails, wilderness areas, national monuments, areas of critical environmental concern, national historic landmarks). Excluded areas for the following states were including the composite suitability: Arizona, California, Colorado, Nevada, New Mexico, and Utah. Datasets were reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+<br>
+<br>
+  <div id="blm_wind">
+    <h3>US Bureau of Land Management Wind Development Restrictions</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_combined_wind_exclusion_areas.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>Consolidated BLM Land with Wind Development Sensitivities
+        <br>
+        <b><u>Description from Source:</u></b>
+        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 09/2016
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          Argonne National Laboratory, 2016. Consolidated BLM Land with Wind Development Sensitivities. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Consolidated_BLM_Land_w_Wind_Dev_Sensitivities.zip
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> All features found in the shapefiles were used in the composite suitability layer except for those already included in other GRIDCERF layers including protected areas and wind resource potential. Datasets were reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+<br>
+
+<br>
+  <div id="carbon_capture">
+    <h3>Carbon Capture Storage Suitability</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_carbon_capture_storage_suitability.tif</li>
+    </ul>
+
+    <b><u>Source Data 1:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>Natural Gas Interstate and Intrastate Pipelines
+        <br>
+        <b><u>Description from Source:</u></b>
+        This is a polyline dataset representing the major natural gas transmission pipelines in the U.S. including interstate, intrastate, and gathering pipelines.These data were compiled by the U.S. Energy Information Administration from various sources including FERC Form 567—Annual Report of System Flow Diagrams and Capacity, and other external sources such as company web pages and industry press. Updated January 2020.        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=https://atlas.eia.gov/datasets/eia::natural-gas-interstate-and-intrastate-pipelines/about>https://atlas.eia.gov/datasets/eia::natural-gas-interstate-and-intrastate-pipelines/about</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 10/21/20
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          US Energy Information Administration, 2020. Natural Gas Interstate and Intrastate Pipelines. U.S. Energy Atlas, https://atlas.eia.gov/datasets/eia::natural-gas-interstate-and-intrastate-pipelines/about        </cite>  <br>
+      </ol>
+      <b><u>Source Data 2:</u></b>
+      <br>
+        <ol>
+          <b><u>Source Data Title:</u></b>NATCARB Atlas Saline Basin 10km Grid
+          <br>
+          <b><u>Description from Source:</u></b>
+          The NATCARB Atlas 10km square grids covers saline basins within all Regional Carbon Sequestration Partnership (RCSP) domains in the US and parts of Canada. Each 10km grid contains information about the saline basin formation below. Attributes associated with each 10km grid are (with (Units, Attribute name) after): Partnership name (PARTNERSHIP) Resource/formation name (RESOURCE_Name) Resource area (square meters, RSC_AREA_C ) CO2 capacity estimate volumes (in metric tons per feature): vol_low (P10), vol_med (P50), and vol_high (P90) (based on Goodman et al. 2011) Depth to top of formation from surface (feet, depth_ft) Formation mean thickness (feet, thickness_) Mean salinity (TDS) (ppm, salinity_t) Mean pressure at top of storage resource (psi, pressure_p) Mean temperature at top of storage resource (degrees F, temperature) Mean porosity (percent, porosity_pct) Mean permeability (mD, permeability_mD) Assessed (1= yes, 0= volume estimates not made)        <br>
+          <b><u>Source Data Downloaded from:</u></b> <a href=https://edx.netl.doe.gov/dataset/natcarb-atlas-saline-basin-10km-grid>https://edx.netl.doe.gov/dataset/natcarb-atlas-saline-basin-10km-grid</a>
+          <br>
+          <b><u>Source Data Last Updated on:</u></b> 5/13/22
+          <br>
+          <b><u>Source Data Accessed on:</u></b>  9/26/23
+          <br>
+          <b><u>Source Data Citation:</u></b>
+          <cite>
+            National Energy Technology Laboratory, 2022. NATCARB Atlas Saline Basin 10km Grid. https://edx.netl.doe.gov/dataset/natcarb-atlas-saline-basin-10km-grid
+                  </cite>  <br>
+        </ol>
+
+    <b><u>Data Layer Methodology:</u></b> Carbon from CCS technologies is stored in saline reservoirs or a carbon pipeline which transfers it to another storage location. CO2 pipeline infrastructure data is not available publicly, therefore, a proxy suitability layer is created for CO2 pipelines that follows the assumption that they may follow similar paths as existing natural gas pipelines. A 50km buffer around the natural gas pipeline areas in combination with any geospatial area located above a saline reservoir is considered suitable for carbon storage. Both source datasets are reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system.
+
+  </div>
+<br>
+
+<br>
+  <div id="coal">
+    <h3>Coal Supply Suitability</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
+    </ul>
+
+    <b><u>Source Data 1:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b> Energy Information Association (EIA) U.S. Coal Mining Locations
+        <br>
+        <b><u>Description from Source:</u></b>
+        The U.S. Energy Information Administration (EIA) provides impartial and independent data on the nation’s energy infrastructure, its sources, flows, and end uses, as well as forecasts and outlooks. Location information for specific extraction activities, as well as power plants and other supply chain components, can help reveal the regional nature of specific impacts and the often large distances between those effects and end-use drivers. This is a point dataset representing operating surface and underground coal mines in the United States in 2012. These data originate from the U.S. Energy Information Administration, Form EIA-7A “Coal Production and Preparation Report” and the U.S. Department of Labor, Mine Safety and Health Administration Form 7000-2, “Quarterly Mine Employment and Coal Production Report.”        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=https://www.sciencebase.gov/catalog/item/5748a4cbe4b07e28b664dd78>https://www.sciencebase.gov/catalog/item/5748a4cbe4b07e28b664dd78</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 7/12/17
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  8/1/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          Energy Information Association (EIA). Energy Information Association U.S. Coal Mining Locations. ScienceBase-Catalog https://www.sciencebase.gov/catalog/item/5748a4cbe4b07e28b664dd78 (2017).        </cite>  <br>
+      </ol>
+      <b><u>Source Data 2:</u></b>
+      <br>
+        <ol>
+          <b><u>Source Data Title:</u></b>U.S. Department of Transportation (USDOT) Bureau of Transportation Statistics (BTS) North American Rail Network Nodes
+          <br>
+          <b><u>Description from Source:</u></b>
+          The rail nodes dataset supports the topology of the North American Rail Network (NARN) and attributes information for use in network analysis applications. The North American Rail Network (NARN) Rail Nodes dataset was created in 2016 and was updated on July 14, 2023 from the Federal Railroad Administration (FRA) and is part of the U.S. Department of Transportation (USDOT)/Bureau of Transportation Statistics (BTS) National Transportation Atlas Database (NTAD). The NARN Rail Nodes dataset is a database of North America's railway system at 1:24,000 or better within the United States. The data set covers all 50 States, the District of Columbia, Mexico, and Canada. The dataset holds topology of the network and provides geographic location information.       <br>
+          <b><u>Source Data Downloaded from:</u></b> <a href= https://data-usdot.opendata.arcgis.com/datasets/usdot::north-american-rail-network-nodes/about> https://data-usdot.opendata.arcgis.com/datasets/usdot::north-american-rail-network-nodes/about</a>
+          <br>
+          <b><u>Source Data Last Updated on:</u></b> 7/21/23
+          <br>
+          <b><u>Source Data Accessed on:</u></b> 8/1/23
+          <br>
+          <b><u>Source Data Citation:</u></b>
+          <cite>
+            U.S. Department of Transportation. North American Rail Network Nodes. U.S. Department of Transportation https://data-usdot.opendata.arcgis.com/datasets/usdot::north-american-rail-network-nodes/explore?location=34.085743%2C-108.310932%2C3.96 (2023).
+                  </cite>  <br>
+        </ol>
+        <b><u>Source Data 3:</u></b>
+        <br>
+          <ol>
+            <b><u>Source Data Title:</u></b> U.S. Department of Transportation (USDOT) Bureau of Transportation Statistics (BTS) Navigable Waterway Network Lines
+            <br>
+            <b><u>Description from Source:</u></b>
+            The Navigable Waterway Network Lines dataset is periodically updated by the United States Army Corp of Engineers (USACE) and is part of the U.S. Department of Transportation (USDOT)/Bureau of Transportation Statistics (BTS) National Transportation Atlas Database (NTAD). The National Waterway Network (Lines) is a comprehensive network database of the Nation's navigable waterways. The dataset covers the 48 contiguous states plus the District of Columbia, Hawaii, Alaska, Puerto Rico and water links between. It consists of a line feature class of the National Waterway Network (NWN), which is based on a route feature class for the NWN update regions (“1” through “7”, as well as the open ocean region “0”) and route event table with linear referencing system measures for NWN links. This dataset is a feature class with associated measures (in miles) that are used for finding distances, locating features, and displaying route event layers. It was exported from this route event layer. The nominal scale of the dataset varies with the source material. The majority of the information is at 1:100,000 with larger scales used in harbor/bay/port areas and smaller scales used in open waters. These data could be used for analytical studies of waterway performance, for compiling commodity flow statistics, and for mapping purposes.       <br>
+            <b><u>Source Data Downloaded from:</u></b> <a href=https://geodata.bts.gov/datasets/usdot::navigable-waterway-network-lines/about> https://geodata.bts.gov/datasets/usdot::navigable-waterway-network-lines/about</a>
+            <br>
+            <b><u>Source Data Last Updated on:</u></b> 1/18/23
+            <br>
+            <b><u>Source Data Accessed on:</u></b> 7/20/23
+            <br>
+            <b><u>Source Data Citation:</u></b>
+            <cite>
+              U.S. Department of Transportation. Navigable Waterway Network Lines. Bureau of Transportation Statistics https://geodata.bts.gov/datasets/usdot::navigable-waterway-network-lines/about (2023).
+                    </cite>  <br>
+          </ol>
+
+    <b><u>Data Layer Methodology:</u></b> All source datasets are reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system. Areas are considered suitable for coal supply if they are (1) Within 20 km of a coal mine (data source 1), (2) within 5 km of a US rail line (data source 2), or (3) within 5 km of a US navigable waterway (data source 3). The combination of these three conditions sets the composite suitability for this layer.
+
+  </div>
+<br>
+
+<br>
+  <div id="dacs">
+    <h3>US Council for Environmental Quality Disadvantaged Communities</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_usceq_cejst_include_health_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_include_energy_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_include_water_dacs</li>
+      <li>gridcerf_usceq_cejst_include_pollution_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_include_climate_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_include_transportation_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_include_workforce_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_include_all_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_exclude_health_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_exclude_energy_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_exclude_water_dacs</li>
+      <li>gridcerf_usceq_cejst_exclude_pollution_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_exclude_climate_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_exclude_transportation_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_exclude_workforce_dacs.tif</li>
+      <li>gridcerf_usceq_cejst_exclude_all_dacs.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>Climate and Economic Justice Screening Tool (CEJST)
+        <br>
+        <b><u>Description from Source:</u></b>
+        The tool highlights disadvantaged census tracts across all 50 states, the District of Columbia, and the U.S. territories. Communities are considered disadvantaged: If they are in census tracts that meet the thresholds for at least one of the tool’s categories of burden, or If they are on land within the boundaries of Federally Recognized Tribes       <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=   https://static-data-screeningtool.geoplatform.gov/data-versions/1.0/data/score/downloadable/1.0-shapefile-codebook.zip>   https://static-data-screeningtool.geoplatform.gov/data-versions/1.0/data/score/downloadable/1.0-shapefile-codebook.zip</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b>11/22/22
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          White House Council on Environmental Quality, 2022. Climate and Economic Justice Screening Tool (CEJST). https://static-data-screeningtool.geoplatform.gov/data-versions/1.0/data/score/downloadable/1.0-shapefile-codebook.zip.
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The CEJST dataset was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied. Individual rasters were created for each type of disadvantaged community (DAC) including health, energy, water, pollution, climate, transportation, and workforce. Additionall, a combined sutiability, considering all DAC types was created. Two types of rasters were created for each DAC category: (1) inclusive - where all geospatial areas outside the DAC are excluded and (2) exclusive - all geospatial areas within the DAC are excluded.
+
+  </div>
+<br>
+<br>
+  <div id="earthquake">
+    <h3>Earthquake Potential</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus.tif</li>
+
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>National Seismic Hazard Model
+        <br>
+        <b><u>Description from Source:</u></b>
+        Seismicity catalogs, GIS shapefiles, gridded seismic hazard curve data, gridded ground motion data, and mapped gridded ground motion values are available for the 2014 National Seismic Hazard Model for the Conterminous U.S. Probabilistic seismic hazard data and maps of the conterminous U.S. for peak ground acceleration (PGA) and 0.2 and 1.0 second spectral acceleration at probability levels of 2 percent in 50 years (annual probability of 0.000404) and 10 percent in 50 years (annual probability of 0.0021), assuming firm rock soil conditions at 760 m/s, are available. Hazard was calculated on a 0.05 degree by 0.05 degree grid, defined by a bounding box encompassing the conterminous U.S. (-125 to -65 degrees longitude west, 24.6 to 50 degrees latitude north). Development of the 2014 National Seismic Hazard Model for the Conterminous U.S. is documented in the USGS Open-File Report 2014-1091 (https://pubs.usgs.gov/of/2014/1091/). This dataset is considered a legacy dataset. The original dataset was uploaded to the USGS website at the time of publication of the seismic hazard model (2014) but was later moved over the the USGS ScienceBase Catalog (2019). The original dataset was assumed to be complete and accurate, but may contain inconsistencies when compared to more recent, actively maintained datasets. NOTE: In 2018, additional period and site class maps were calculated for the 2014 NSHM. For additional period and site class maps and data, please see https://doi.org/10.5066/P9I6BPX5, documented in USGS Open-File Report 2018-1111 (https://doi.org/10.3133/ofr20181111).
+             <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=    https://www.sciencebase.gov/catalog/item/5db9be62e4b06957974eb5ca>    https://www.sciencebase.gov/catalog/item/5db9be62e4b06957974eb5ca</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b>12/17/19
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  8/3/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          Shumway, A.M., 2019, Data Release for the 2014 National Seismic Hazard Model for the Conterminous U.S.: U.S. Geological Survey data release, https://doi.org/10.5066/P9P77LGZ
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The dataset was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. Only areas with peak ground acceleration (pga) equal to or greater than .30 are excluded in the composite suitability layer.
+
+  </div>
+<br>
+<br>
 <hr>
 
 </div>
@@ -1156,6 +1610,6 @@ layers and allows for user customization to robustly address science objectives 
 <h2>5. Compiled Technology Layers</h2>
 
 </div>
-
+</div>
 </body>
 </html>

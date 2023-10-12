@@ -246,3 +246,4 @@ data/gridcerf/compiled
 notebooks/template.ipynb
 *.tif
 *.xml
+*.jpg

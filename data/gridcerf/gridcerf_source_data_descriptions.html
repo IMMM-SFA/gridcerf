@@ -5,7 +5,6 @@
 <h1>GRIDCERF Source Data Descriptions & Methodology</h1>
 
 <h4> Version 2.0</h4>
-<h4> Released: 10/25/23</h4>
 
 <h4> Accompanying GitHub Repository</h4>
 
@@ -74,6 +73,8 @@ Science as part of research in MultiSector Dynamics, Earth and Environmental Sys
         <li> <a href="#blm_wild"><span class="title">US Bureau of Land Management Wilderness Areas</span></a> </li>
         <li> <a href="#blm_study"><span class="title">US Bureau of Land Management Wilderness Study Areas</span></a> </li>
 
+        <li> <a href="#bor_sma"><span class="title">US Bureau of Reclamation Surface Management Areas</span></a> </li>
+
         <li> <a href="#dod_sma"><span class="title">US Department of Defense Military Installations, Ranges, and Training Areas</span></a> </li>
         <li> <a href="#epa_class"><span class="title">US Environmental Protection Agency Class 1 Airsheds</span></a> </li>
 
@@ -84,7 +85,8 @@ Science as part of research in MultiSector Dynamics, Earth and Environmental Sys
         <li> <a href="#usfs_wild"><span class="title">US Forest Service Wilderness Areas</span></a> </li>
         <li> <a href="#fs_rivers"><span class="title">US Forest Service National Wild & Scenic Rivers</span></a> </li>
 
-        <li> <a href="#usgs_pad"><span class="title">US Geological Survey Protected Areas Database Class 1 & 2</span></a> </li>
+        <li> <a href="#usgs_pad"><span class="title">US Geological Survey Protected Areas Database Class 1 & 2 Additions</span></a> </li>
+        <li> <a href="#usgs_lakes"><span class="title">US Geological Survey Lakes and Reservoirs</span></a> </li>
 
         <li> <a href="#nps_hist"><span class="title">US National Park Service National Historic Trails</span></a> </li>
         <li> <a href="#nps_scenic"><span class="title">US National Park Service National Scenic Trails</span></a> </li>      
@@ -501,7 +503,7 @@ layers and allows for user customization to robustly address science objectives 
     <b><u>Source Data Title:</u></b>USFWS Threatened & Endangered Species Active Critical Habitat Report
     <br>
     <b><u>Description from Source:</u></b>
-    When a species is proposed for listing as endangered or threatened under the Endangered Species Act, the U.S. Fish and Wildlife Service must consider whether there are areas of habitat believed to be essential the species’ conservation. Those areas may be proposed for designation as “critical habitat.” Critical habitat is a term defined and used in the Act. It is a specific geographic area(s) that contains features essential for the conservation of a threatened or endangered species and that may require special management and protection. Critical habitat may include an area that is not currently occupied by the species but that will be needed for its recovery. An area is designated as “critical habitat” after the Service publishes a proposed Federal regulation in the Federal Register and receives and considers public comments on the proposal. The final boundaries of the critical habitat are also published in the Federal Register. Critical habitat are areas considered essential for the conservation of a listed species. Federal agencies are required to consult with the U.S. Fish and Wildlife Service on actions they carry out, fund, or authorize to ensure that their actions will not destroy or adversely modify critical habitat. These areas provide notice to the public and land managers of the importance of these areas to the conservation of a listed species. Special protections and/or restrictions are possible in areas where Federal funding, permits, licenses, authorizations, or actions occur or are required.
+    When a species is proposed for listing as endangered or threatened under the Endangered Species Act, the U.S. Fish and Wildlife Service must consider whether there are areas of habitat believed to be essential the species' conservation. Those areas may be proposed for designation as “critical habitat.” Critical habitat is a term defined and used in the Act. It is a specific geographic area(s) that contains features essential for the conservation of a threatened or endangered species and that may require special management and protection. Critical habitat may include an area that is not currently occupied by the species but that will be needed for its recovery. An area is designated as “critical habitat” after the Service publishes a proposed Federal regulation in the Federal Register and receives and considers public comments on the proposal. The final boundaries of the critical habitat are also published in the Federal Register. Critical habitat are areas considered essential for the conservation of a listed species. Federal agencies are required to consult with the U.S. Fish and Wildlife Service on actions they carry out, fund, or authorize to ensure that their actions will not destroy or adversely modify critical habitat. These areas provide notice to the public and land managers of the importance of these areas to the conservation of a listed species. Special protections and/or restrictions are possible in areas where Federal funding, permits, licenses, authorizations, or actions occur or are required.
     <br>
     <b><u>Source Data Downloaded from:</u></b> <a href= https://ecos.fws.gov/ecp/report/table/critical-habitat.html> https://ecos.fws.gov/ecp/report/table/critical-habitat.html</a>
     <br>
@@ -548,9 +550,6 @@ layers and allows for user customization to robustly address science objectives 
     <br>
     <b><u>Applied to:</u></b> All technologies.
     <br>
-    <b><u>Application Methodology:</u></b> 
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
   </div>
   <img src="raster_images/gridcerf_usfws_special_designation_conus.jpg"
   width="1000" 
@@ -605,10 +604,7 @@ layers and allows for user customization to robustly address science objectives 
     <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system. A 1000 meter buffer is added to the linestring geometry prior to rasterization. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster.
     <br>
     <b><u>Applied to:</u></b> All technologies.
-    <br>
-    <b><u>Application Methodology:</u></b> 
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
+<br>
   </div>
   <img src="raster_images/gridcerf_usfs_national_wild_scenic_river_system_conus.jpg"
   width="1000" 
@@ -635,11 +631,7 @@ layers and allows for user customization to robustly address science objectives 
     </cite>><br>
     <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
     <br>
-    <b><u>Applied to:</u></b> All technologies.
-    <br>
-    <b><u>Application Methodology:</u></b> Renewable energy developments are allowed on USFS public lands.
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
+
   </div>
   <img src="raster_images/gridcerf_usfs_wilderness_areas_conus.jpg"
   width="1000" 
@@ -648,8 +640,35 @@ layers and allows for user customization to robustly address science objectives 
 
   <br>
   <div id="usgs_pad"></div>
-    <h3>US Geological Survey Protected Areas Database Class 1 & 2</h3>
-    <b><u>GRIDCERF Layer Name:</u></b> gridcerf_usgs_padus_class_1_to_2_conus.tif
+    <h3>US Geological Survey Lakes and Reservoirs</h3>
+    <b><u>GRIDCERF Layer Name:</u></b> gridcerf_usgs_lakes_reservoirs.tif
+    <br>
+    <b><u>Source Data Title:</u></b>North America Rivers and Lakes
+    <br>
+    <b><u>Description from Source:</u></b>The North American Atlas - Hydrography data set shows the coastline, linear hydrographic features, and area hydrographic features in North America.
+    <br>
+    <b><u>Source Data Downloaded from:</u></b> <a href= https://www.sciencebase.gov/catalog/item/4fb55df0e4b04cb937751e02>  https://www.sciencebase.gov/catalog/item/4fb55df0e4b04cb937751e02</a>
+    <br>
+    <b><u>Source Data Last Updated on:</u></b> 07/17/2014
+    <br>
+    <b><u>Source Data Accessed on:</u></b>  9/26/2023
+    <br>
+    <b><u>Source Data Citation:</u></b>
+    <cite>US Geological Survey, 2017. North America Rivers and Lakes. North America Spatial Data. https://www.sciencebase.gov/catalog/item/4f4e4760e4b07f02db47df9c
+    </cite>><br>
+    <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. The North American Rivers and Lakes dataset includes both natural lakes (Type 16 in the dataset) and reservoirs (Type 18 in the dataset). Other data item types represent land, ocean, or N/A areas and are not included in the final suitability layer.
+    <br>
+
+  </div>
+  <img src="raster_images/gridcerf_usgs_lakes_reservoirs.jpg"
+  width="1000" 
+  /> 
+  <br>
+
+  <br>
+  <div id="usgs_pad"></div>
+    <h3>US Geological Survey Protected Areas Database Class 1 & 2 Additions</h3>
+    <b><u>GRIDCERF Layer Name:</u></b> gridcerf_usgs_padus_class_1_to_2_conus_additions.tif
     <br>
     <b><u>Source Data Title:</u></b>Protected Areas Database of the United States (PAD-US) 3.0 (ver. 2.0, March 2023)
     <br>
@@ -665,20 +684,18 @@ layers and allows for user customization to robustly address science objectives 
     <b><u>Source Data Citation:</u></b>
     <cite>U.S. Geological Survey Gap Analysis Project. Protected Areas Database of the United States (PAD-US) 3.0 (ver. 2.0, March 2023). ScienceBase-Catalog https://doi.org/10.5066/P9Q9LQ4B (2023).</cite><br>
     <b><u>Data Layer Methodology:</u></b> 
-    The composite GRIDCERF USGS PAD layer includes status class 1 and 2:
+    The composite GRIDCERF USGS PAD layer includes status class 1 and 2 that is not already excluded in other common layers:
     <ul>
     <li>Class 1 - managed for biodiversity - disturbance events proceed or are mimicked.</li>
     <li>Class 2 - managed for biodiversity - disturbance events suppressed.</li>
     </ul>
-    The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers are applied.
+    The PADUS dataset includes many areas that are separately included in GRIDCERF data layers (e.g., national parks, national monuments). To avoid significant correlation across GRIDCERF files, the combined information of exluded areas already covered in the other common layers is excluded from the composite PADUS layer. Protected areas that are in addition to the ones separately captured, are therefore represented by this layer. To create the composite PADUS layer, the PADUS source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster.
+
     <br>
     <b><u>Applied to:</u></b> All technologies.
     <br>
-    <b><u>Application Methodology:</u></b>
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
   </div>
-  <img src="raster_images/gridcerf_usgs_padus_class_1_to_2_conus.jpg"
+  <img src="raster_images/gridcerf_usgs_padus_class_1_to_2_conus_additions.jpg"
   width="1000" 
   /> 
   <br>
@@ -705,10 +722,7 @@ layers and allows for user customization to robustly address science objectives 
     <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system. A 1000 meter buffer is added to the linestring geometry prior to rasterization. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster.
     <br>
     <b><u>Applied to:</u></b> All technologies.
-    <br>
-    <b><u>Application Methodology:</u></b> 
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
+<br>
   </div>
 </div>
 <img src="raster_images/gridcerf_nps_historic_trails_conus.jpg"
@@ -738,10 +752,7 @@ width="1000"
     <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system. A 1000 meter buffer is added to the linestring geometry prior to rasterization. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster.
     <br>
     <b><u>Applied to:</u></b> All technologies.
-    <br>
-    <b><u>Application Methodology:</u></b> 
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
+<br>
   </div>
   <img src="raster_images/gridcerf_nps_scenic_trails_conus.jpg"
 width="1000" 
@@ -756,7 +767,7 @@ width="1000"
     <b><u>Source Data Title:</u></b>National Park Service tract and boundary
     <br>
     <b><u>Description from Source:</u></b>
-    This service depicts National Park Service tract and boundary data that was created by the Land Resources Division.  NPS Director's Order #25 states: "Land status maps will be prepared to identify the ownership of the lands within the authorized boundaries of the park unit. These maps, showing ownership and acreage, are the 'official record' of the acreage of Federal and non-federal lands within the park boundaries. While these maps are the official record of the lands and acreage within the unit's authorized boundaries, they are not of survey quality and not intended to be used for survey purposes." As such this data is intended for use as a tool for GIS analysis. It is in no way intended for engineering or legal purposes. The data accuracy is checked against best available sources which may be dated and vary by location. NPS assumes no liability for use of this data. The boundary polygons represent the current legislated boundary of a given NPS unit. NPS does not necessarily have full fee ownership or hold another interest (easement, right of way, etc...) in all parcels contained within this boundary. Equivalently NPS may own or have an interest in parcels outside the legislated boundary of a given unit. In order to obtain complete information about current NPS interests both inside and outside a unit’s legislated boundary tract level polygons are also created by NPS Land Resources Division and should be used in conjunction with this boundary data. To download this data directly from the NPS go to https://irma.nps.gov/App/Portal/Home  Property ownership data is compiled from deeds, plats, surveys, and other source data. These are not engineering quality drawings and should be used for administrative purposes only. The National Park Service (NPS) shall not be held liable for improper or incorrect use of the data described and/or contained herein. These data and related graphics are not legal documents and are not intended to be used as such. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived. It is the responsibility of the data user to use the data appropriately and consistent within the limitations of geospatial data in general and these data in particular. The related graphics are intended to aid the data user in acquiring relevant data; it is not appropriate to use the related graphics as data. The National Park Service gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of these data. It is strongly recommended that these data are directly acquired from an NPS server and not indirectly through other sources which may have changed the data in some way. Although these data have been processed successfully on a computer system at the National Park Service, no warranty expressed or implied is made regarding the utility of the data on another system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. This disclaimer applies both to individual use of the data and aggregate use with other data. 
+    This service depicts National Park Service tract and boundary data that was created by the Land Resources Division.  NPS Director's Order #25 states: "Land status maps will be prepared to identify the ownership of the lands within the authorized boundaries of the park unit. These maps, showing ownership and acreage, are the 'official record' of the acreage of Federal and non-federal lands within the park boundaries. While these maps are the official record of the lands and acreage within the unit's authorized boundaries, they are not of survey quality and not intended to be used for survey purposes." As such this data is intended for use as a tool for GIS analysis. It is in no way intended for engineering or legal purposes. The data accuracy is checked against best available sources which may be dated and vary by location. NPS assumes no liability for use of this data. The boundary polygons represent the current legislated boundary of a given NPS unit. NPS does not necessarily have full fee ownership or hold another interest (easement, right of way, etc...) in all parcels contained within this boundary. Equivalently NPS may own or have an interest in parcels outside the legislated boundary of a given unit. In order to obtain complete information about current NPS interests both inside and outside a unit's legislated boundary tract level polygons are also created by NPS Land Resources Division and should be used in conjunction with this boundary data. To download this data directly from the NPS go to https://irma.nps.gov/App/Portal/Home  Property ownership data is compiled from deeds, plats, surveys, and other source data. These are not engineering quality drawings and should be used for administrative purposes only. The National Park Service (NPS) shall not be held liable for improper or incorrect use of the data described and/or contained herein. These data and related graphics are not legal documents and are not intended to be used as such. The information contained in these data is dynamic and may change over time. The data are not better than the original sources from which they were derived. It is the responsibility of the data user to use the data appropriately and consistent within the limitations of geospatial data in general and these data in particular. The related graphics are intended to aid the data user in acquiring relevant data; it is not appropriate to use the related graphics as data. The National Park Service gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of these data. It is strongly recommended that these data are directly acquired from an NPS server and not indirectly through other sources which may have changed the data in some way. Although these data have been processed successfully on a computer system at the National Park Service, no warranty expressed or implied is made regarding the utility of the data on another system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. This disclaimer applies both to individual use of the data and aggregate use with other data. 
     <br>
     <b><u>Source Data Downloaded from:</u></b> <a href= https://public-nps.opendata.arcgis.com/datasets/nps::nps-boundary-4/about> https://public-nps.opendata.arcgis.com/datasets/nps::nps-boundary-4/about</a>
     <br>
@@ -788,7 +799,7 @@ width="1000"
     <b><u>Source Data Title:</u></b> National Land Cover Dataset (NLCD) - Wetlands
     <br>
     <b><u>Description from Source:</u></b>
-    The U.S. Geological Survey (USGS), in partnership with several federal agencies, has developed and released five National Land Cover Database (NLCD) products over the past two decades: NLCD 1992, 2001, 2006, 2011 and 2016. These products provide spatially explicit and reliable information on the Nation’s land cover and land cover change. To continue the legacy of NLCD and further establish a long-term monitoring capability for the Nation’s land resources, the USGS designed a new generation of NLCD products released in 2016. This design continues in 2019 and aims to provide innovative, consistent, and robust methodologies for production of a multi-temporal land cover and land cover change database from 2001 to 2019 at 2-3-year intervals. Comprehensive research was conducted and resulted in processes in streamlined processes for integrating specialized MRLC partner data along with numerous newly available dataset, assembling and preprocessing Landsat imagery and geospatial ancillary datasets; a multi-source integrated training data development and machine learning based land cover classifications; a temporally, spectrally, and spatially integrated land cover change analysis strategy; a hierarchical theme-based post-classification and integration protocol for generating land cover and change products; a continuous fields biophysical parameters modeling method; and an automated operational system for the NLCD 2019 production. These processes resulted in a five percent increase in accuracy from the 2011 product for an overall Level II & I Overall accuracy (OA) 86.4% & 90.6% in the NLCD 2016 release.  (Wickham et. al, "Thematic Accuracy assessment of the NLCD 2016 land cover for the conterminous United States", Remote Sensing of Environment, volume 257, May 2021, 112357 https://doi.org/10.1016/j.rse.2021.112357 )
+    The U.S. Geological Survey (USGS), in partnership with several federal agencies, has developed and released five National Land Cover Database (NLCD) products over the past two decades: NLCD 1992, 2001, 2006, 2011 and 2016. These products provide spatially explicit and reliable information on the Nation's land cover and land cover change. To continue the legacy of NLCD and further establish a long-term monitoring capability for the Nation's land resources, the USGS designed a new generation of NLCD products released in 2016. This design continues in 2019 and aims to provide innovative, consistent, and robust methodologies for production of a multi-temporal land cover and land cover change database from 2001 to 2019 at 2-3-year intervals. Comprehensive research was conducted and resulted in processes in streamlined processes for integrating specialized MRLC partner data along with numerous newly available dataset, assembling and preprocessing Landsat imagery and geospatial ancillary datasets; a multi-source integrated training data development and machine learning based land cover classifications; a temporally, spectrally, and spatially integrated land cover change analysis strategy; a hierarchical theme-based post-classification and integration protocol for generating land cover and change products; a continuous fields biophysical parameters modeling method; and an automated operational system for the NLCD 2019 production. These processes resulted in a five percent increase in accuracy from the 2011 product for an overall Level II & I Overall accuracy (OA) 86.4% & 90.6% in the NLCD 2016 release.  (Wickham et. al, "Thematic Accuracy assessment of the NLCD 2016 land cover for the conterminous United States", Remote Sensing of Environment, volume 257, May 2021, 112357 https://doi.org/10.1016/j.rse.2021.112357 )
     <br>
     <b><u>Source Data Downloaded from:</u></b> <a href= https://www.mrlc.gov/data/nlcd-2019-land-cover-conus> https://www.mrlc.gov/data/nlcd-2019-land-cover-conus</a>
     <br>
@@ -815,10 +826,7 @@ width="1000"
     Following the pre-process steps, we reprojected the data to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system and rasterized. Any 1km grid cell that is touched by a feature geometry is burned in as part of the final raster. No additional modifications or buffers were applied.
     <br>
     <b><u>Applied to:</u></b> All technologies.
-    <br>
-    <b><u>Application Methodology:</u></b> 
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
+<br>
   </div>
   <img src="raster_images/gridcerf_nlcd_wetlands_conus.jpg"
   width="1000" 
@@ -908,7 +916,7 @@ width="1000"
     <b><u>Source Data Title:</u></b>Bureau of Indian Affairs (BIA) Land Area Representations
     <br>
     <b><u>Description from Source:</u></b>
-    The purpose of the American Indian and Alaska Native Land Area Representation (AIAN-LAR) Geographic Information System (GIS) dataset is to depict the external extent of federal Indian reservations and the external extent of associated land held in “trust” by the United States, “restricted fee” or “mixed ownership” status for federally recognized tribes and individual Indians. This dataset includes other land area types such as Public Domain Allotments, Dependent Indian Communities and Homesteads. This GIS Dataset is prepared strictly for illustrative and reference purposes only and should not be used, and is not intended for legal, survey, engineering or navigation purposes. No warranty is made by the Bureau of Indian Affairs (BIA) for the use of the data for purposes not intended by the BIA. This GIS Dataset may contain errors. There is no impact on the legal status of the land areas depicted herein and no impact on land ownership. No legal inference can or should be made from the information in this GIS Dataset. The GIS Dataset is to be used solely for illustrative, reference and statistical purposes and may be used for government to government Tribal consultation. Reservation boundary data is limited in authority to those areas where there has been settled Congressional definition or final judicial interpretation of the boundary. Absent settled Congressional definition or final judicial interpretation of a reservation boundary, the BIA recommends consultation with the appropriate Tribe and then the BIA to obtain interpretations of the reservation boundary. The land areas and their representations are compilations defined by the official land title records of the Bureau of Indian Affairs (BIA) which include treaties, statutes, Acts of Congress, agreements, executive orders, proclamations, deeds and other land title documents. The trust, restricted, and mixed ownership land area shown here, are suitable only for general spatial reference and do not represent the federal government’s position on the jurisdictional status of Indian country. Ownership and jurisdictional status is subject to change and must be verified with plat books, patents, and deeds in the appropriate federal and state offices. Included in this dataset are the exterior extent of off reservation trust, restricted fee tracts and mixed tracts of land including Public Domain allotments, Dependent Indian Communities, Homesteads and government administered lands and those set aside for schools and dormitories. There are also land areas where there is more than one tribe having an interest in or authority over a tract of land but this information is not specified in the AIAN-LAR dataset. The dataset includes both surface and subsurface tracts of land (tribal and individually held) “off reservation” tracts and not simply off reservation “allotments” as land has in many cases been subsequently acquired in trust. These data are public information and may be used by various organizations, agencies, units of government (i.e., Federal, state, county, and city), and other entities according to the restrictions on appropriate use. It is strongly recommended that these data be acquired directly from the BIA and not indirectly through some other source, which may have altered or integrated the data for another purpose for which they may not have been intended. Integrating land areas into another dataset and attempting to resolve boundary differences between other entities may produce inaccurate results. It is also strongly recommended that careful attention be paid to the content of the metadata file associated with these data. Users are cautioned that digital enlargement of these data to scales greater than those at which they were originally mapped can cause misinterpretation. The BIA AIAN-LAR dataset's spatial accuracy and attribute information are continuously being updated, improved and is used as the single authoritative land area boundary data for the BIA mission. These data are available through the Bureau of Indian Affairs, Office of Trust Services, Division of Land Titles and Records, Branch of Geospatial Support.
+    The purpose of the American Indian and Alaska Native Land Area Representation (AIAN-LAR) Geographic Information System (GIS) dataset is to depict the external extent of federal Indian reservations and the external extent of associated land held in “trust” by the United States, “restricted fee” or “mixed ownership” status for federally recognized tribes and individual Indians. This dataset includes other land area types such as Public Domain Allotments, Dependent Indian Communities and Homesteads. This GIS Dataset is prepared strictly for illustrative and reference purposes only and should not be used, and is not intended for legal, survey, engineering or navigation purposes. No warranty is made by the Bureau of Indian Affairs (BIA) for the use of the data for purposes not intended by the BIA. This GIS Dataset may contain errors. There is no impact on the legal status of the land areas depicted herein and no impact on land ownership. No legal inference can or should be made from the information in this GIS Dataset. The GIS Dataset is to be used solely for illustrative, reference and statistical purposes and may be used for government to government Tribal consultation. Reservation boundary data is limited in authority to those areas where there has been settled Congressional definition or final judicial interpretation of the boundary. Absent settled Congressional definition or final judicial interpretation of a reservation boundary, the BIA recommends consultation with the appropriate Tribe and then the BIA to obtain interpretations of the reservation boundary. The land areas and their representations are compilations defined by the official land title records of the Bureau of Indian Affairs (BIA) which include treaties, statutes, Acts of Congress, agreements, executive orders, proclamations, deeds and other land title documents. The trust, restricted, and mixed ownership land area shown here, are suitable only for general spatial reference and do not represent the federal government's position on the jurisdictional status of Indian country. Ownership and jurisdictional status is subject to change and must be verified with plat books, patents, and deeds in the appropriate federal and state offices. Included in this dataset are the exterior extent of off reservation trust, restricted fee tracts and mixed tracts of land including Public Domain allotments, Dependent Indian Communities, Homesteads and government administered lands and those set aside for schools and dormitories. There are also land areas where there is more than one tribe having an interest in or authority over a tract of land but this information is not specified in the AIAN-LAR dataset. The dataset includes both surface and subsurface tracts of land (tribal and individually held) “off reservation” tracts and not simply off reservation “allotments” as land has in many cases been subsequently acquired in trust. These data are public information and may be used by various organizations, agencies, units of government (i.e., Federal, state, county, and city), and other entities according to the restrictions on appropriate use. It is strongly recommended that these data be acquired directly from the BIA and not indirectly through some other source, which may have altered or integrated the data for another purpose for which they may not have been intended. Integrating land areas into another dataset and attempting to resolve boundary differences between other entities may produce inaccurate results. It is also strongly recommended that careful attention be paid to the content of the metadata file associated with these data. Users are cautioned that digital enlargement of these data to scales greater than those at which they were originally mapped can cause misinterpretation. The BIA AIAN-LAR dataset's spatial accuracy and attribute information are continuously being updated, improved and is used as the single authoritative land area boundary data for the BIA mission. These data are available through the Bureau of Indian Affairs, Office of Trust Services, Division of Land Titles and Records, Branch of Geospatial Support.
     <br>
     <b><u>Source Data Downloaded from:</u></b> <a href=https://data.nativeland.info/gl/dataset/bureau-of-indian-affairs-land-area-representations/resource/f83449c2-bdf7-4edd-aa45-759587f3f48f>https://data.nativeland.info/gl/dataset/bureau-of-indian-affairs-land-area-representations/resource/f83449c2-bdf7-4edd-aa45-759587f3f48f</a>
     <br>
@@ -1245,7 +1253,7 @@ width="1000"
         <b><u>Source Data Title:</u></b> Energy Information Association (EIA) U.S. Coal Mining Locations
         <br>
         <b><u>Description from Source:</u></b>
-        The U.S. Energy Information Administration (EIA) provides impartial and independent data on the nation’s energy infrastructure, its sources, flows, and end uses, as well as forecasts and outlooks. Location information for specific extraction activities, as well as power plants and other supply chain components, can help reveal the regional nature of specific impacts and the often large distances between those effects and end-use drivers. This is a point dataset representing operating surface and underground coal mines in the United States in 2012. These data originate from the U.S. Energy Information Administration, Form EIA-7A “Coal Production and Preparation Report” and the U.S. Department of Labor, Mine Safety and Health Administration Form 7000-2, “Quarterly Mine Employment and Coal Production Report.”        <br>
+        The U.S. Energy Information Administration (EIA) provides impartial and independent data on the nation's energy infrastructure, its sources, flows, and end uses, as well as forecasts and outlooks. Location information for specific extraction activities, as well as power plants and other supply chain components, can help reveal the regional nature of specific impacts and the often large distances between those effects and end-use drivers. This is a point dataset representing operating surface and underground coal mines in the United States in 2012. These data originate from the U.S. Energy Information Administration, Form EIA-7A “Coal Production and Preparation Report” and the U.S. Department of Labor, Mine Safety and Health Administration Form 7000-2, “Quarterly Mine Employment and Coal Production Report.”        <br>
         <b><u>Source Data Downloaded from:</u></b> <a href=https://www.sciencebase.gov/catalog/item/5748a4cbe4b07e28b664dd78>https://www.sciencebase.gov/catalog/item/5748a4cbe4b07e28b664dd78</a>
         <br>
         <b><u>Source Data Last Updated on:</u></b> 7/12/17
@@ -1331,7 +1339,7 @@ width="1000"
         <b><u>Source Data Title:</u></b>Climate and Economic Justice Screening Tool (CEJST)
         <br>
         <b><u>Description from Source:</u></b>
-        The tool highlights disadvantaged census tracts across all 50 states, the District of Columbia, and the U.S. territories. Communities are considered disadvantaged: If they are in census tracts that meet the thresholds for at least one of the tool’s categories of burden, or If they are on land within the boundaries of Federally Recognized Tribes       <br>
+        The tool highlights disadvantaged census tracts across all 50 states, the District of Columbia, and the U.S. territories. Communities are considered disadvantaged: If they are in census tracts that meet the thresholds for at least one of the tool's categories of burden, or If they are on land within the boundaries of Federally Recognized Tribes       <br>
         <b><u>Source Data Downloaded from:</u></b> <a href=   https://static-data-screeningtool.geoplatform.gov/data-versions/1.0/data/score/downloadable/1.0-shapefile-codebook.zip>   https://static-data-screeningtool.geoplatform.gov/data-versions/1.0/data/score/downloadable/1.0-shapefile-codebook.zip</a>
         <br>
         <b><u>Source Data Last Updated on:</u></b>11/22/22
@@ -1616,7 +1624,7 @@ title="gridcerf_state_level_solar_exclusions"
         <b><u>Source Data Title:</u></b>Cartographic Boundary Files - Shapefile
         <br>
         <b><u>Description from Source:</u></b>
-        The cartographic boundary files are simplified representations of selected geographic areas from the Census Bureau’s MAF/TIGER geographic database. These boundary files are specifically designed for small scale thematic mapping.
+        The cartographic boundary files are simplified representations of selected geographic areas from the Census Bureau's MAF/TIGER geographic database. These boundary files are specifically designed for small scale thematic mapping.
         
         The cartographic boundary files are available in shapefile and KML format.  A shapefile is a geospatial data format for use in geographic information system (GIS) software. For KML versions of these files, please see our Cartographic Boundary Files - KML page.  
                     <br>
@@ -1691,7 +1699,7 @@ title="gridcerf_landmask_0-land"
         <br>
         <b><u>Source Data Citation:</u></b>
         <cite>
-          Moore, R. B. et al. User’s guide for the national hydrography dataset plus (NHDPlus) high resolution: U.S. Geological Survey Open-File Report 2019–1096. https://pubs.er.usgs.gov/publication/ofr20191096 (2019).
+          Moore, R. B. et al. User's guide for the national hydrography dataset plus (NHDPlus) high resolution: U.S. Geological Survey Open-File Report 2019–1096. https://pubs.er.usgs.gov/publication/ofr20191096 (2019).
                         </cite>  <br>
       </ol>
       <b><u>Source Data 2:</u></b>
@@ -3665,7 +3673,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_dod_military_installations_conus.tif</li>
       <li>gridcerf_usfws_critical_habitat_conus.tif</li>
       <li>gridcerf_nlcd_wetlands_conus.tif</li>
-      <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+      <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
       <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
     </ul>
     <br>
@@ -3708,7 +3716,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_dod_military_installations_conus.tif</li>
       <li>gridcerf_usfws_critical_habitat_conus.tif</li>
       <li>gridcerf_nlcd_wetlands_conus.tif</li>
-      <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+      <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
       <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
     </ul>
     <br>
@@ -4409,7 +4417,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
         <li>gridcerf_dod_military_installations_conus.tif</li>
         <li>gridcerf_usfws_critical_habitat_conus.tif</li>
         <li>gridcerf_nlcd_wetlands_conus.tif</li>
-        <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+        <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
         <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
       </ul>
       <br>
@@ -4451,7 +4459,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <li>gridcerf_dod_military_installations_conus.tif</li>
     <li>gridcerf_usfws_critical_habitat_conus.tif</li>
     <li>gridcerf_nlcd_wetlands_conus.tif</li>
-    <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+    <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
     <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
   </ul>
   <br>
@@ -4470,7 +4478,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <li>gridcerf_landmask_0-land.tif</li>
 
   </ul>
-    <img src="raster_images/gridcerf_solar_csp_centralized_recirculating__30cf.jpg"
+    <img src="raster_images/gridcerf_solar_csp_centralized_recirculating_30cf.jpg"
     width="1000" 
     title="gridcerf_solar_csp_centralized_recirculating_30cf"
     />
@@ -4493,7 +4501,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_dod_military_installations_conus.tif</li>
       <li>gridcerf_usfws_critical_habitat_conus.tif</li>
       <li>gridcerf_nlcd_wetlands_conus.tif</li>
-      <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+      <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
       <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
     </ul>
     <br>
@@ -4536,7 +4544,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
         <li>gridcerf_dod_military_installations_conus.tif</li>
         <li>gridcerf_usfws_critical_habitat_conus.tif</li>
         <li>gridcerf_nlcd_wetlands_conus.tif</li>
-        <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+        <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
         <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
       </ul>
       <br>
@@ -4578,7 +4586,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <li>gridcerf_dod_military_installations_conus.tif</li>
     <li>gridcerf_usfws_critical_habitat_conus.tif</li>
     <li>gridcerf_nlcd_wetlands_conus.tif</li>
-    <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+    <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
     <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
   </ul>
   <br>
@@ -4621,7 +4629,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
   <li>gridcerf_dod_military_installations_conus.tif</li>
   <li>gridcerf_usfws_critical_habitat_conus.tif</li>
   <li>gridcerf_nlcd_wetlands_conus.tif</li>
-  <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+  <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
   <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
 </ul>
 <br>
@@ -4663,7 +4671,7 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
         <li>gridcerf_dod_military_installations_conus.tif</li>
         <li>gridcerf_usfws_critical_habitat_conus.tif</li>
         <li>gridcerf_nlcd_wetlands_conus.tif</li>
-        <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+        <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
         <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
       </ul>
       <br>
@@ -4705,7 +4713,7 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
     <li>gridcerf_dod_military_installations_conus.tif</li>
     <li>gridcerf_usfws_critical_habitat_conus.tif</li>
     <li>gridcerf_nlcd_wetlands_conus.tif</li>
-    <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+    <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
     <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
   </ul>
   <br>
@@ -4750,7 +4758,7 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
     <li>gridcerf_dod_military_installations_conus.tif</li>
     <li>gridcerf_usfws_critical_habitat_conus.tif</li>
     <li>gridcerf_nlcd_wetlands_conus.tif</li>
-    <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+    <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
     <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
   </ul>
   <br>
@@ -4795,7 +4803,7 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
     <li>gridcerf_dod_military_installations_conus.tif</li>
     <li>gridcerf_usfws_critical_habitat_conus.tif</li>
     <li>gridcerf_nlcd_wetlands_conus.tif</li>
-    <li>gridcerf_usgs_padus_class_1_to_2_conus.tif</li>
+    <li>gridcerf_usgs_padus_class_1_to_2_conus_additions.tif</li>
     <li>gridcerf_wdpa_tnc_managed_lands_conus.tif</li>
   </ul>
   <br>

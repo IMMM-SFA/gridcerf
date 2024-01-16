@@ -24,7 +24,7 @@ Science as part of research in MultiSector Dynamics, Earth and Environmental Sys
 <h4>License</h4>
     BSD 2-Clause License
     <br>
-    <p>Copyright (c) 2023, Integrated Multisector Multiscale Modeling</p>
+    <p>Copyright (c) 2024, Integrated Multisector Multiscale Modeling</p>
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are met:
     <br>
@@ -99,6 +99,7 @@ Science as part of research in MultiSector Dynamics, Earth and Environmental Sys
 
       </ul>
     </li>
+    <br>
     <li>
         <a href="#technology_specific">
           <span class="title">Technology-Specific Data Layers</span>
@@ -145,14 +146,26 @@ Science as part of research in MultiSector Dynamics, Earth and Environmental Sys
           <li> <a href="#wind_potential"><span class="title">Wind Resource Potential </span> </a> </li>
         </ul>
       </li>
+    <br>
     <li>
         <a href="#compiled">
-          <span class="title">Compiled Layers</span>
+          <span class="title">Compiled Technology Layers</span>
         </a>
       </li>
-      <ol>
+      <ul>
+        <li> <a href="#biomass_compiled"><span class="title">Biomass </span> </a> </li>
+        <li> <a href="#coal_compiled"><span class="title">Coal</span> </a> </li>
+        <li> <a href="#geothermal_compiled"><span class="title">Geothermal </span> </a> </li>
+        <li> <a href="#natgas_compiled"><span class="title">Natural Gas </span> </a> </li>
+        <li> <a href="#nuclear_compiled"><span class="title">Nuclear </span> </a> </li>
+        <li> <a href="#refined_compiled"><span class="title">Refined Liquids (Oil) </span> </a> </li>
+        <li> <a href="#solar_csp_compiled"><span class="title">Solar (CSP) </span> </a> </li>
+        <li> <a href="#solar_pv_compiled"><span class="title">Solar (PV) </span> </a> </li>   
+        <li> <a href="#wind_compiled"><span class="title">Wind</span> </a> </li>    
+        <li> <a href="#wind_off_compiled"><span class="title">Wind (Offshore) </span> </a> </li>    
+
         <!-- subsection items -->
-      </ol>
+      </ul>
     </li>
   </ol>
 
@@ -169,7 +182,7 @@ at the state or regional scale and are not equipped to address the wide range of
 that are increasingly a factor in power plant siting. To help address these challenges, we have developed the Geospatial 
 Raster Input Data for Capacity Expansion Regional Feasibility (GRIDCERF) data package, a high-resolution product to 
 evaluate siting suitability for renewable and non-renewable power plants in the conterminous United States. GRIDCERF 
-offers 265 suitability layers for use with 56 power plant technology configurations in a harmonized format that can be 
+offers over 200 suitability layers for use with over 75 power plant technology configurations in a harmonized format that can be 
 easily ingested by geospatially-enabled modeling software. It also provides pre-compiled technology-specific suitability 
 layers and allows for user customization to robustly address science objectives when evaluating varying future conditions.
 </p>
@@ -276,7 +289,7 @@ layers and allows for user customization to robustly address science objectives 
 </ul>
 <h3>Solar PV</h3>
 <p> Individual technology suitability files are created for the technology below at the following capacity factors: 6%,
-    8%, 10%, 12%, 14%, 16%, 18%, and 20% </p>
+    8%, 10%, 12%, 14%, 16%, and 18% </p>
 <ul>
     <li> Solar Photovoltaic (PV) Centralized </li>
 </ul>
@@ -335,7 +348,7 @@ layers and allows for user customization to robustly address science objectives 
     <br>
     <b><u>Applied to:</u></b> All technologies
     <br>
-    <b><u>Application Methodology:</u></b> National Monuments are included in US BLM's National Conservation Landas which are preserved and protected from development.
+    <b><u>Application Methodology:</u></b> National Monuments are included in US BLM's National Conservation Lands which are preserved and protected from development.
     <br>
     <b><u>Methodology References:</u></b> <cite>US BLM, 2023. National Conservation Lands. US. Department of the Interior. Available at: https://www.blm.gov/programs/national-conservation-lands (accessed 10/3/23)</cite>
   </div>
@@ -428,9 +441,6 @@ layers and allows for user customization to robustly address science objectives 
     <br>
     <b><u>Applied to:</u></b> All technologies except solar, wind, and geothermal.
     <br>
-    <b><u>Application Methodology:</u></b> This layer includes all public lands managed by US Bureau of Reclamation.
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
   </div>
   <img src="raster_images/gridcerf_bor_surface_management_agency_areas.jpg"
   width="1000" 
@@ -858,10 +868,6 @@ width="1000"
     <br>
     <b><u>Applied to:</u></b> All technologies.
     <br>
-    <b><u>Application Methodology:</u></b>
-    <br>
-    <b><u>Methodology References:</u></b> <cite></cite>
-    <br>
     <img src="raster_images/gridcerf_wdpa_tnc_managed_lands_conus.jpg"
     width="1000" 
     /> 
@@ -876,32 +882,61 @@ width="1000"
 
 <br>
   <div id="airports">
-    <h3>Airports (0, 3, & 10-mile buffer)</h3>
+    <h3>Airports (0, 7, 8, 9, 10, 12, and 13-km buffer)</h3>
     <b><u>GRIDCERF Layer Name(s):</u></b> 
     <ul>
-      <li>gridcerf_airports_no_buffer_conus.tif</li>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_no_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_7km_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_8km_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_10km_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_12km_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
     </ul>
-    <b><u>Source Data Title:</u></b>U.S. Department of Transportation (USDOT) Bureau of Transportation Statistics (BTS) - Airport Facilities
+    <b><u>Source Data 1:</u></b>
     <br>
-    <b><u>Description from Source:</u></b>The dataset provides users with information about airport locations and attributes and can be used for national and regional analysis applications. The Aviation Facilities dataset is updated every 28 days from the Federal Aviation Administration (FAA) and is part of the U.S. Department of Transportation (USDOT)/Bureau of Transportation Statistics (BTS) National Transportation Atlas Database (NTAD). The Aviation Facilities dataset is a geographic point database of all official and operational aerodromes in the United States and U.S. Territories. Attribute data is provided on the physical and operational characteristics of the aerodrome, current usage including enplanements and aircraft operations, congestion levels and usage categories. This geospatial data is derived from the FAA's National Airspace System Resource Aeronautical Data Product. For more information about these data, please visit: https://www.faa.gov/air_traffic/flight_info/aeronav/Aero_Data/NASR_Subscription.
-    
+      <ol>
+        <b><u>Source Data Title:</u></b>U.S. Department of Transportation (USDOT) Bureau of Transportation Statistics (BTS) - Airport Facilities
+        <br>
+        <b><u>Description from Source:</u></b>The dataset provides users with information about airport locations and attributes and can be used for national and regional analysis applications. The Aviation Facilities dataset is updated every 28 days from the Federal Aviation Administration (FAA) and is part of the U.S. Department of Transportation (USDOT)/Bureau of Transportation Statistics (BTS) National Transportation Atlas Database (NTAD). The Aviation Facilities dataset is a geographic point database of all official and operational aerodromes in the United States and U.S. Territories. Attribute data is provided on the physical and operational characteristics of the aerodrome, current usage including enplanements and aircraft operations, congestion levels and usage categories. This geospatial data is derived from the FAA's National Airspace System Resource Aeronautical Data Product. For more information about these data, please visit: https://www.faa.gov/air_traffic/flight_info/aeronav/Aero_Data/NASR_Subscription.
+        
+        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=https://geodata.bts.gov/datasets/usdot::aviation-facilities/explore>https://geodata.bts.gov/datasets/usdot::aviation-facilities/explore</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 7/14/2023
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  7/20/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>Bureau of Transportation Statistics. Aviation Facilities. Transportation.gov U.S. Department of Transportation https://geodata.bts.gov/maps/usdot::aviation-facilities (2023).</cite>
+      </ol>  
+        <br>
+        <br>
+  <b><u>Source Data 2:</u></b>
     <br>
-    <b><u>Source Data Downloaded from:</u></b> <a href=https://geodata.bts.gov/datasets/usdot::aviation-facilities/explore>https://geodata.bts.gov/datasets/usdot::aviation-facilities/explore</a>
+      <ol>
+        <b><u>Source Data Title:</u></b>U.S. Department of Transportation (USDOT) Bureau of Transportation Statistics (BTS) - Runways
+        <br>
+        <b><u>Description from Source:</u></b>This data provides users with information about the runway locations and attributes for national and regional analysis applications. The Runways dataset is updated every 28 days from the Federal Aviation Administration (FAA) and is part of the U.S. Department of Transportation (USDOT)/Bureau of Transportation Statistics (BTS) National Transportation Atlas Database (NTAD). The Runways database contains runways in the United States and US territories containing information on the physical characteristics of the runways. This data layer contains runways that have corresponding and reported runways ends, and the linear feature of the runway could be created based off these points. The runways in the dataset are associated with the airports dataset on NTAD, showing runways for all official and operational aerodromes. This geospatial data is derived from the FAA's National Airspace System Resource Aeronautical Data.
+        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=https://geodata.bts.gov/datasets/usdot::runways/explore>https://geodata.bts.gov/datasets/usdot::runways/explore</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 12/29/23
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  1/10/24
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>Bureau of Transportation Statistics. Runways. Transportation.gov U.S. Department of Transportation https://geodata.bts.gov/datasets/usdot::runways/explore (2023).</cite>
+        <br>
+      </ol>
     <br>
-    <b><u>Source Data Last Updated on:</u></b> 7/14/2023
-    <br>
-    <b><u>Source Data Accessed on:</u></b>  7/20/23
-    <br>
-    <b><u>Source Data Citation:</u></b>
-    <cite>Bureau of Transportation Statistics. Aviation Facilities. Transportation.gov U.S. Department of Transportation https://geodata.bts.gov/maps/usdot::aviation-facilities (2023).</cite>
-    <br>
-    <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system. A buffer of 1, 3, and 10km are applied to separate copies of the data prior to being rasterized. No additional modifications or buffers are applied.
+  <b><u>Data Layer Methodology:</u></b> The source data are reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system. From source data 1, all airport, heliport, balloonport, and similar areas are excluded from siting for all technologies. For technologies that have facilities with tall components (e.g., wind turbines, CSP towers, plant stacks), an additional area around any airport that has a runway at least 3200 ft long is also excluded, following Federal Aviation Administration DOT, 77.23. Airports that do not meet this criteria receive no additional buffer. Heliports and baloonports do not receive an additional buffer. The buffer amount is determined based on the height of the object where for each additional 100 ft of height over 200ft, an additional 1 nautical mile buffer must be applied past 3 nautical miles.
+  <br>
+  <br>
   </div>
-  <img src="raster_images/gridcerf_airports_3mi_buffer_conus.jpg"
+  <img src="raster_images/gridcerf_airports_faa_10km_buffer_conus.jpg"
   width="1000" 
-  title="gridcerf_airports_3mi_buffer_conus"
+  title="gridcerf_airports_faa_10km_buffer_conus"
   />
 <br>
 <br>
@@ -1539,79 +1574,6 @@ width="1000"
 <br>
 
 <br>
-  <div id="lakes_res">
-    <h3>Lakes and Reservoirs</h3>
-    <b><u>GRIDCERF Layer Name(s):</u></b> 
-    <ul>
-      <li>gridcerf_usgs_lakes_reservoirs.tif</li>
-    </ul>
-
-    <b><u>Source Data:</u></b>
-    <br>
-      <ol>
-        <b><u>Source Data Title:</u></b>North America Rivers and Lakes
-        <br>
-        <b><u>Description from Source:</u></b>
-        A joint venture involving the National Atlas programs in Canada (Natural Resources Canada), Mexico (Instituto Nacional de Estadística y Geografía), and the United States (U.S. Geological Survey), as well as the North American Commission for Environmental Cooperation, has led to the release (June 2004) of several new products: an updated paper map of North America, and its associated geospatial data sets and their metadata.  These data sets are available online from each of the partner countries for download. The North American Atlas data are standardized geospatial data sets at 1:10,000,000 scale.  A variety of basic data layers (e.g. roads, railroads, populated places, political boundaries, hydrography, bathymetry, sea ice and glaciers) have been integrated so that their relative positions are correct.  This collection of data sets forms a base with which other North American thematic data may be integrated.  Any data outside of Canada, Mexico, and the United States of America included in the North American Atlas data sets is strictly to complete the context of the data. The North American Atlas - Hydrography data set shows the coastline, linear hydrographic features, and area hydrographic features in North America. This is a revised version of the 2006 data set.
-                     <br>
-        <b><u>Source Data Downloaded from:</u></b> <a href= https://www.sciencebase.gov/catalog/item/4fb55df0e4b04cb937751e02> 
-          https://www.sciencebase.gov/catalog/item/4fb55df0e4b04cb937751e02</a>
-        <br>
-        <b><u>Source Data Last Updated on:</u></b>05/17/12
-        <br>
-        <b><u>Source Data Accessed on:</u></b>  09/26/23
-        <br>
-        <b><u>Source Data Citation:</u></b>
-        <cite>
-          US Geological Survey, 2017. North America Rivers and Lakes. North America Spatial Data. https://www.sciencebase.gov/catalog/item/4f4e4760e4b07f02db47df9c (accessed 09/26/23)
-                        </cite>  <br>
-      </ol>
-      
-    <b><u>Data Layer Methodology:</u></b> The North American Rivers and Lakes dataset includes both natural lakes (Type 16 in the dataset) and reservoirs (Type 18 in the dataset). Other data item types represent land, ocean, or N/A areas and are not included in the final suitability layer. A composite suitability layer is the combinatino of both Type 16 and Type 18 data, where areas meeting this classification are non-suitable (value = 1). The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization, no other buffers or modifications are applied.
-  </div>
-  <img src="raster_images/gridcerf_usgs_lakes_reservoirs.jpg"
-  width="1000" 
-  title="gridcerf_usgs_lakes_reservoirs"
-  />
-<br>
-
-<br>
-  <div id="state_solar">
-    <h3>State-level Solar Exclusions</h3>
-    <b><u>GRIDCERF Layer Name(s):</u></b> 
-    <ul>
-      <li>gridcerf_state_level_solar_exclusions.tif</li>
-    </ul>
-    <b><u>Source Data:</u></b>
-    <br>
-      <ol>
-        <b><u>Source Data Title:</u></b>Protected Areas Exclusion (Solar)
-        <br>
-        <b><u>Description from Source:</u></b>
-        The protected area layer is a composite GIS layer designed to encompass areas where utility-scale renewable energy or transmission development is precluded by state or federal law, policy, or regulation. It draws from several protected areas datasets, local, state or federal land that is designated for other uses, easements, and other similar designations. The protected area layer is combined with the techno-economic exclusion layer to form the base exclusions in the CEC 2023 Land Use Screens.                    <br>
-        <b><u>Source Data Downloaded from:</u></b> <a href=    https://data.cnra.ca.gov/dataset/protected-areas-exclusion-solar> 
-          https://data.cnra.ca.gov/dataset/protected-areas-exclusion-solar</a>
-        <br>
-        <b><u>Source Data Last Updated on:</u></b> 10/06/23
-        <br>
-        <b><u>Source Data Accessed on:</u></b>  10/11/23
-        <br>
-        <b><u>Source Data Citation:</u></b>
-        <cite>
-          California Energy Commission, 2023. Protected Areas Exclusion (Solar).https://data.cnra.ca.gov/dataset/protected-areas-exclusion-solar (accessed 10/11/23)
-        </cite>  <br>
-      </ol>
-      
-    <b><u>Data Layer Methodology:</u></b> The source data is reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization, no other buffers or modifications are applied.
-
-  </div>
-  <img src="raster_images/gridcerf_state_level_solar_exclusions.jpg"
-width="1000" 
-title="gridcerf_state_level_solar_exclusions"
-/>
-<br>
-
-<br>
   <div id="landmask">
     <h3>Land Mask</h3>
     <b><u>GRIDCERF Layer Name(s):</u></b> 
@@ -1905,7 +1867,7 @@ title="gridcerf_landmask_0-land"
     <b><u>Source Data:</u></b>
     <br>
       <ol>
-        <b><u>Source Data Title:</u></b>2022 TIGER/Line® Shapefiles: Coastline
+        <b><u>Source Data Title:</u></b>2022 TIGER/Line Shapefiles: Coastline
         <br>
         <b><u>Description from Source:</u></b>
         The 2022 TIGER/Line Shapefiles contain current geographic extent and boundaries of both legal and statistical entities (which have no governmental standing) for the United States, the District of Columbia, Puerto Rico, and the Island areas. This vintage includes boundaries of governmental units that match the data from the surveys that use 2022 geography (e.g., the 2022 American Community Survey).
@@ -2232,150 +2194,150 @@ title="gridcerf_noaa_offshore_wrecks_obstructions"
     <h3>Populated Areas</h3>
     <b><u>GRIDCERF Layer Name(s):</u></b> 
     <ul>
-      <li>gridcerf_densely_populated_ssp2_2025.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2030.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2035.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2040.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2045.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2050.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2055.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2060.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2065.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2070.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2075.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2080.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2085.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2090.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2095.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2100.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2025.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2030.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2035.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2040.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2045.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2050.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2055.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2060.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2065.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2070.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2075.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2080.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2085.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2090.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2095.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2100.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2025.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2030.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2035.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2040.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2045.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2050.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2055.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2060.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2065.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2070.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2075.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2080.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2085.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2090.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2095.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2100.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2025_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2030_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2035_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2040_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2045_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2050_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2055_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2060_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2065_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2070_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2075_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2080_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2085_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2090_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2095_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2100_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2025_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2030_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2035_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2040_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2045_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2050_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2055_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2060_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2065_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2070_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2075_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2080_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2085_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2090_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2095_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2100_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2025_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2030_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2035_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2040_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2045_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2050_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2055_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2060_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2065_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2070_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2075_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2080_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2085_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2090_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2095_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2100_buff25mi.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2025_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2030_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2035_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2040_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2045_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2050_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2055_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2060_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2065_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2070_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2075_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2080_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2085_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2090_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2095_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp2_2100_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2025_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2030_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2035_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2040_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2045_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2050_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2055_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2060_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2065_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2070_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2075_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2080_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2085_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2090_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2095_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp3_2100_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2025_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2030_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2035_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2040_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2045_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2050_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2055_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2060_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2065_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2070_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2075_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2080_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2085_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2090_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2095_nuclear.tif</li>
-      <li>gridcerf_densely_populated_ssp5_2100_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2025_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2030_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2035_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2040_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2045_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2050_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2055_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2060_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2065_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2070_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2075_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2080_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2085_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2090_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2095_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2100_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2025_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2030_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2035_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2040_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2045_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2050_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2055_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2060_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2065_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2070_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2075_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2080_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2085_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2090_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2095_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp3_2100_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2025_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2030_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2035_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2040_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2045_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2050_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2055_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2060_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2065_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2070_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2075_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2080_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2085_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2090_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2095_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp5_2100_1km_conus_50k_per25sqmi.tif</li>
+      <li>gridcerf_population_ssp2_2025_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2030_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2035_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2040_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2045_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2050_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2055_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2060_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2065_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2070_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2075_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2080_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2085_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2090_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2095_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2100_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2025_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2030_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2035_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2040_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2045_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2050_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2055_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2060_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2065_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2070_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2075_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2080_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2085_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2090_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2095_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp3_2100_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2025_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2030_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2035_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2040_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2045_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2050_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2055_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2060_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2065_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2070_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2075_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2080_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2085_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2090_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2095_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp5_2100_1km_conus_50k_per25sqmi_25buffer.tif</li>
+      <li>gridcerf_population_ssp2_2025_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2030_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2035_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2040_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2045_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2050_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2055_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2060_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2065_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2070_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2075_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2080_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2085_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2090_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2095_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp2_2100_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2025_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2030_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2035_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2040_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2045_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2050_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2055_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2060_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2065_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2070_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2075_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2080_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2085_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2090_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2095_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp3_2100_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2025_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2030_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2035_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2040_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2045_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2050_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2055_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2060_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2065_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2070_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2075_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2080_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2085_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2090_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2095_1km_conus_nuclear.tif</li>
+      <li>gridcerf_population_ssp5_2100_1km_conus_nuclear.tif</li>
   
     </ul>
 
@@ -2400,11 +2362,11 @@ title="gridcerf_noaa_offshore_wrecks_obstructions"
                                         </cite>  <br>
       </ol>
       
-    <b><u>Data Layer Methodology:</u></b> Suitability layers are created for densely populated areas in 5 year increments between 2025 and 2100, inclusive for SSP2, SSP3, and SSP5. Three types of population density suitability layers are created for each year/SSP combination: (1) densely populated areas are excluded with no additional buffer, (2) densely populated areas + a 25 mile buffer, and (3) a nuclear-technology specific suitability layer. 
+    <b><u>Data Layer Methodology:</u></b> Suitability layers are created for densely populated areas in 5 year increments between 2025 and 2100, inclusive for SSP2, SSP3, and SSP5. Three types of population density suitability layers are created for each year/SSP combination: (1) densely populated areas are excluded with no additional buffer, (2) densely populated areas + a 25 mile buffer, and (3) a nuclear-technology specific suitability. 
   </div>
-  <img src="raster_images/gridcerf_densely_populated_ssp2_2050.jpg"
+  <img src="raster_images/gridcerf_population_ssp5_2055_1km_conus_50k_per25sqmi.jpg"
 width="1000" 
-title="gridcerf_densely_populated_ssp2_2050"
+title="gridcerf_population_ssp5_2055_1km_conus_50k_per25sqmi"
 />
 <br>
 
@@ -2917,10 +2879,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan5mgd_buffer20km.tif</li>
 
@@ -2940,10 +2907,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan700mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -2962,10 +2934,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan20mgd_buffer20km.tif</li>
@@ -2985,10 +2962,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan20mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3007,10 +2989,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan2mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3028,10 +3015,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan700mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3049,10 +3041,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan15mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3070,10 +3067,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan15mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3092,10 +3094,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan15mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3113,10 +3120,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan5mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3135,10 +3147,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan7000mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3157,10 +3174,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan110mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3179,10 +3201,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan20mgd_buffer20km.tif</li>
@@ -3202,10 +3229,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan20mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3223,10 +3255,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan7000mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3244,10 +3281,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan70mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3265,10 +3307,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan70mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3279,7 +3326,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       title="gridcerf_biomass_igcc_no-ccs_recirculating-seawater"
       />
       <hr>
-      
+<div id="coal_compiled">     
 <h2>COAL</h2>
  <h3>Coal Conventional CCS Dry Cooling</h3>
       <b><u>GRICERF Layer Name:</u></b> gridcerf_coal_conventional_ccs_dry.tif
@@ -3290,10 +3337,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan70mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3312,10 +3364,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan10000mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3334,10 +3391,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan200mgd_buffer20km.tif</li>
@@ -3357,10 +3419,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan200mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3379,10 +3446,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan25mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3400,10 +3472,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan10000mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3421,10 +3498,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan3000mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3442,10 +3524,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan200mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3465,10 +3552,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan200mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3486,10 +3578,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan75mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3508,10 +3605,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan10000mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3531,10 +3633,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan145mgd_buffer20km.tif</li>
@@ -3554,10 +3661,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan145mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3576,10 +3688,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan25mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3597,10 +3714,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan7000mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3618,10 +3740,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan7000mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -3640,10 +3767,15 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_nhd2plus_surfaceflow_greaterthan95mgd_buffer20km.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3653,10 +3785,10 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       title="gridcerf_coal_igcc_no-ccs_recirculating"
       />
       <hr>
-
+<div id="geothermal_compiled">     
 <h2>Geothermal</h2>
 
-<h3>Geothermal centralized enhanced Dry-Hybrid Cooling</h3>
+<h3>Geothermal Centralized Enhanced Dry-Hybrid Cooling</h3>
   <b><u>GRICERF Layer Name:</u></b> gridcerf_geothermal_centralized_enhanced_dry-hybrid_class{i}.tif
     <br>
     <b><u>Common Layers Applied:</u></b>
@@ -3680,14 +3812,19 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
       <li>gridcerf_blm_drecp_wildlife_allocation.tif</li>
       <li>gridcerf_blm_historic_landmarks.tif</li>
       <li>gridcerf_blm_historic_parks.tif</li>
       <li>gridcerf_state_level_geothermal_exclusions.tif</li>
       <li>gridcerf_srtm_slope_30pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_usgs_aquifer_nhd2plus_surfaceflow_5mgd_20km.tif</li>
       <li>gridcerf_nrel_geothermal_temp_potential_class{i}_or_greater.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
@@ -3699,7 +3836,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     title="gridcerf_geothermal_centralized_enhanced_dry-hybrid_class3"
     />
 <hr>
-<h3>Geothermal centralized enhanced Recirculating Cooling</h3>
+<h3>Geothermal Centralized Enhanced Recirculating Cooling</h3>
   <b><u>GRICERF Layer Name:</u></b> gridcerf_geothermal_centralized_enhanced_recirculating_class{i}.tif
     <br>
     <b><u>Common Layers Applied:</u></b>
@@ -3723,14 +3860,19 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
       <li>gridcerf_blm_drecp_wildlife_allocation.tif</li>
       <li>gridcerf_blm_historic_landmarks.tif</li>
       <li>gridcerf_blm_historic_parks.tif</li>
       <li>gridcerf_state_level_geothermal_exclusions.tif</li>
       <li>gridcerf_srtm_slope_30pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_usgs_aquifer_nhd2plus_surfaceflow_55mgd_20km.tif</li>
       <li>gridcerf_nrel_geothermal_temp_potential_class{i}_or_greater.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
@@ -3742,7 +3884,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     title="gridcerf_geothermal_centralized_enhanced_recirculating_class3"
     />
 <hr>
-
+<div id="natgas_compiled">     
 <h2>Natural Gas</h2>
 
 <h3>Natural Gas Combined Cycle (CC) CCS Dry Cooling </h3>
@@ -3753,9 +3895,14 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan25mgd_buffer20km.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
@@ -3774,9 +3921,14 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan3000mgd_buffer20km.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
@@ -3795,9 +3947,14 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan120mgd_buffer20km.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
@@ -3816,9 +3973,14 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan120mgd_buffer20km.tif</li>
       <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
@@ -3839,9 +4001,14 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan5mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3859,9 +4026,14 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan3000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3879,9 +4051,14 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan1000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3900,9 +4077,14 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan70mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3920,9 +4102,14 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_buff25mi_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan70mgd_buffer20km.tif</li>
       <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
@@ -3941,7 +4128,12 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_no_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
@@ -3951,454 +4143,560 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     title="gridcerf_gas_turbine_no-ccs_no-cooling"
     />
 <hr>
-
+<div id="nuclear_compiled">     
 <h2>Nuclear</h2>
 
 <h3>Nuclear Gen 3 AP1000 Oncethrough Cooling </h3>
-  <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_ap1000_oncethrough.tif
+  <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_ap1000_oncethrough.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan50000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen3_ap1000_oncethrough.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_ap1000_oncethrough.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen3_ap1000_oncethrough"
+    title="gridcerf_1km_conus_nuclear_gen3_ap1000_oncethrough"
     />
 <hr>
 <h3>Nuclear Gen 3 AP1000 Pond Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_ap1000_pond.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_ap1000_pond.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan7000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen3_ap1000_pond.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_ap1000_pond.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen3_ap1000_pond"
+    title="gridcerf_1km_conus_nuclear_gen3_ap1000_pond"
     />
 <h3>Nuclear Gen 3 AP1000 Recirculating Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_ap1000_recirculating.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan1000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen3_ap1000_recirculating.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen3_ap1000_recirculating"
+    title="gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating"
     />
 <h3>Nuclear Gen 3 AP1000 Recirculating-Seawater Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_ap1000_recirculating-seawater.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating-seawater.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan1000mgd_buffer20km.tif</li>
       <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen3_ap1000_recirculating-seawater.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating-seawater.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen3_ap1000_recirculating-seawater"
+    title="gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating-seawater"
     />
 <h3>Nuclear Gen 3 Small Modular Reactor (SMR) Oncethrough Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_smr_oncethrough.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_smr_oncethrough.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan10000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen3_smr_oncethrough.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_smr_oncethrough.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen3_smr_oncethrough"
+    title="gridcerf_1km_conus_nuclear_gen3_smr_oncethrough"
     />
 <h3>Nuclear Gen 3 SMR Pond Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_smr_pond.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_smr_pond.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan1000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen3_smr_pond.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_smr_pond.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen3_smr_pond"
+    title="gridcerf_1km_conus_nuclear_gen3_smr_pond"
     />
 <h3>Nuclear Gen 3 SMR Recirculating Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_smr_recirculating.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_smr_recirculating.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan200mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen3_smr_recirculating.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_smr_recirculating.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen3_smr_recirculating"
+    title="gridcerf_1km_conus_nuclear_gen3_smr_recirculating"
     />
 <h3>Nuclear Gen 3 SMR Recirculating-Seawater Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_smr_recirculating-seawater.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_smr_recirculating-seawater.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan200mgd_buffer20km.tif</li>
       <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen3_smr_recirculating-seawater.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_smr_recirculating-seawater.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen3_smr_recirculating-seawater"
+    title="gridcerf_1km_conus_nuclear_gen3_smr_recirculating-seawater"
     />
 <h3>Nuclear Gen 2 Light Water Reactor (LWR) Oncethrough Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen2_lwr_oncethrough.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen2_lwr_oncethrough.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan50000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen2_lwr_oncethrough.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen2_lwr_oncethrough.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen2_lwr_oncethrough"
+    title="gridcerf_1km_conus_nuclear_gen2_lwr_oncethrough"
     />
 <h3>Nuclear Gen 2 LWR Pond Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen2_lwr_pond.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen2_lwr_pond.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan7000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen2_lwr_pond.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen2_lwr_pond.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen2_lwr_pond"
+    title="gridcerf_1km_conus_nuclear_gen2_lwr_pond"
     />
 <h3>Nuclear Gen 2 LWR Recirculating Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen2_lwr_recirculating.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen2_lwr_recirculating.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan1000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen2_lwr_recirculating.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen2_lwr_recirculating.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen2_lwr_recirculating"
+    title="gridcerf_1km_conus_nuclear_gen2_lwr_recirculating"
     />
 <h3>Nuclear Gen 2 LWR Recirculating-Seawater Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen2_lwr_recirculating-seawater.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen2_lwr_recirculating-seawater.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_10mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_nuclear_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan1000mgd_buffer20km.tif</li>
       <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_nuclear_gen2_lwr_recirculating-seawater.jpg"
+    <img src="raster_images/gridcerf_1km_conus_nuclear_gen2_lwr_recirculating-seawater.jpg"
     width="1000" 
-    title="gridcerf_nuclear_gen2_lwr_recirculating-seawater"
+    title="gridcerf_1km_conus_nuclear_gen2_lwr_recirculating-seawater"
     />
 
-
+<div id="refined_compiled">     
 <h2>Refined Liquids (Oil)</h2>
 
 <h3>Refined Liquids CC CCS Dry Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> 
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_refinedliquids_cc_ccs_dry.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan35mgd_buffer20km.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/.jpg"
+    <img src="raster_images/gridcerf_refinedliquids_cc_ccs_dry.jpg"
     width="1000" 
-    title=""
+    title="gridcerf_refinedliquids_cc_ccs_dry"
     />
 <h3>Refined Liquids CC CCS Oncethrough Cooling </h3>
-      <b><u>GRICERF Layer Name:</u></b> 
+      <b><u>GRICERF Layer Name:</u></b> gridcerf_refinedliquids_cc_ccs_oncethrough.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan5000mgd_buffer20km.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/.jpg"
+    <img src="raster_images/gridcerf_refinedliquids_cc_ccs_oncethrough.jpg"
     width="1000" 
-    title=""
+    title="gridcerf_refinedliquids_cc_ccs_oncethrough"
     />
 <h3>Refined Liquids CC CCS Recirculating-Seawater Cooling </h3>
-      <b><u>GRICERF Layer Name:</u></b> 
+      <b><u>GRICERF Layer Name:</u></b> gridcerf_refinedliquids_cc_ccs_recirculating-seawater.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan55mgd_buffer20km.tif</li>
       <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/.jpg"
+    <img src="raster_images/gridcerf_refinedliquids_cc_ccs_recirculating-seawater.jpg"
     width="1000" 
-    title=""
+    title="gridcerf_refinedliquids_cc_ccs_recirculating-seawater"
     />
 <h3>Refined Liquids CC CCS Recirculating Cooling </h3>
-      <b><u>GRICERF Layer Name:</u></b> 
+      <b><u>GRICERF Layer Name:</u></b> gridcerf_refinedliquids_cc_ccs_recirculating.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan55mgd_buffer20km.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/.jpg"
+    <img src="raster_images/gridcerf_refinedliquids_cc_ccs_recirculating.jpg"
     width="1000" 
-    title=""
+    title="gridcerf_refinedliquids_cc_ccs_recirculating"
     />
 <h3>Refined Liquids CC No-CCS Dry Cooling </h3>
-      <b><u>GRICERF Layer Name:</u></b> 
+      <b><u>GRICERF Layer Name:</u></b> gridcerf_refinedliquids_cc_no-ccs_dry.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan10mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/.jpg"
+    <img src="raster_images/gridcerf_refinedliquids_cc_no-ccs_dry.jpg"
     width="1000" 
-    title=""
+    title="gridcerf_refinedliquids_cc_no-ccs_dry"
     />
 <h3>Refined Liquids CC No-CCS Oncethrough Cooling </h3>
-      <b><u>GRICERF Layer Name:</u></b> 
+      <b><u>GRICERF Layer Name:</u></b> gridcerf_refinedliquids_cc_no-ccs_oncethrough.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan3000mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/.jpg"
+    <img src="raster_images/gridcerf_refinedliquids_cc_no-ccs_oncethrough.jpg"
     width="1000" 
-    title=""
+    title="gridcerf_refinedliquids_cc_no-ccs_oncethrough"
     />
 <h3>Refined Liquids CC No-CCS Recirculating-Seawater Cooling </h3>
-      <b><u>GRICERF Layer Name:</u></b> 
+      <b><u>GRICERF Layer Name:</u></b> gridcerf_refinedliquids_cc_no-ccs_recirculating-seawater.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan40mgd_buffer20km.tif</li>
       <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/.jpg"
+    <img src="raster_images/gridcerf_refinedliquids_cc_no-ccs_recirculating-seawater.jpg"
     width="1000" 
-    title=""
+    title="gridcerf_refinedliquids_cc_no-ccs_recirculating-seawater"
     />
 <h3>Refined Liquids CC No-CCS Recirculating Cooling </h3>
-      <b><u>GRICERF Layer Name:</u></b> 
+      <b><u>GRICERF Layer Name:</u></b> gridcerf_refinedliquids_cc_no-ccs_recirculating.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan40mgd_buffer20km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/.jpg"
+    <img src="raster_images/gridcerf_refinedliquids_cc_no-ccs_recirculating.jpg"
     width="1000" 
-    title=""
+    title="gridcerf_refinedliquids_cc_no-ccs_recirculating"
     />
 <h3>Refined Liquids Turbine No-CCS </h3>
-      <b><u>GRICERF Layer Name:</u></b> 
+      <b><u>GRICERF Layer Name:</u></b> gridcerf_refinedliquids_turbine_no-ccs_no-cooling.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_no_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/.jpg"
+    <img src="raster_images/gridcerf_refinedliquids_turbine_no-ccs_no-cooling.jpg"
     width="1000" 
-    title=""
+    title="gridcerf_refinedliquids_turbine_no-ccs_no-cooling"
     />
 
+<div id="solar_csp_compiled">     
 <h2>SOLAR</h2>
     <h3>Solar CSP Centralized Dry-Hybrid Cooling</h3>
       <b><u>GRICERF Layer Name:</u></b> gridcerf_solar_csp_centralized_dry-hybrid_{i}cf.tif
@@ -4424,13 +4722,17 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+        <li>gridcerf_airports_faa_12km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
         <li>gridcerf_blm_combined_solar_exclusions.tif</li>
-        <li>gridcerf_blm_historic_landmarks.tif</li>
         <li>gridcerf_state_level_solar_exclusions.tif</li>
         <li>gridcerf_srtm_slope_5pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
         <li>gridcerf_usgs_aquifer_nhd2plus_surfaceflow_2mgd_buffer20km.tif</li>
         <li>gridcerf_nrel_solar_csp_potential_{i}cf</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -4466,13 +4768,17 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
   <b><u>Technology Specific Layers Applied:</u></b>
   <br>
   <ul>
-    <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+    <li>gridcerf_airports_faa_12km_buffer_conus.tif</li>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
     <li>gridcerf_blm_combined_solar_exclusions.tif</li>
-    <li>gridcerf_blm_historic_landmarks.tif</li>
     <li>gridcerf_state_level_solar_exclusions.tif</li>
     <li>gridcerf_srtm_slope_5pct_or_less.tif</li>
-    <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+    <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
     <li>gridcerf_usgs_aquifer_nhd2plus_surfaceflow_5mgd_buffer20km.tif</li>
     <li>gridcerf_nrel_solar_csp_potential_{i}cf</li>
     <li>gridcerf_landmask_0-land.tif</li>
@@ -4483,6 +4789,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     title="gridcerf_solar_csp_centralized_recirculating_30cf"
     />
 <hr>
+<div id="solar_pv_compiled">     
     <br>
     <h3>Solar PV Centralized</h3>
     <b><u>GRICERF Layer Name:</u></b> gridcerf_solar_pv_centralized_no-cooling_{i}cf.tif
@@ -4508,13 +4815,18 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <b><u>Technology Specific Layers Applied:</u></b>
     <br>
     <ul>
-      <li>gridcerf_airports_3mi_buffer_conus.tif</li>
+      <li>gridcerf_airports_faa_no_buffer_conus.tif</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
       <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
       <li>gridcerf_blm_combined_solar_exclusions.tif</li>
-      <li>gridcerf_blm_historic_landmarks.tif</li>
       <li>gridcerf_state_level_solar_exclusions.tif</li>
       <li>gridcerf_srtm_slope_5pct_or_less.tif</li>
-      <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+      <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
       <li>gridcerf_usgs_aquifer_nhd2plus_surfaceflow_2mgd_buffer20km.tif</li>
       <li>gridcerf_nrel_solar_pv_potential_{i}cf</li>
       <li>gridcerf_landmask_0-land.tif</li>
@@ -4525,7 +4837,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     title="gridcerf_solar_pv_centralized_no-cooling_14cf"
     />
     <hr>
-
+<div id="wind_compiled">     
   <h2>WIND</h2>
     <h3>Onshore Wind - 80m Hub Height</h3>
       <b><u>GRICERF Layer Name:</u></b> gridcerf_wind_onshore_hubheight80_no-cooling_{i}cf.tif
@@ -4551,13 +4863,16 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
+        <li>gridcerf_airports_faa_7km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_blm_combined_wind_exclusions.tif</li>
-        <li>gridcerf_blm_historic_landmarks.tif</li>
         <li>gridcerf_state_level_wind_exclusions.tif</li>
         <li>gridcerf_srtm_slope_20pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
         <li>gridcerf_nrel_wind_onshore_potential_80m_{i}cf.tif</li>
         <li>gridcerf_noaa_radar_stations_5mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -4593,13 +4908,16 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
   <b><u>Technology Specific Layers Applied:</u></b>
   <br>
   <ul>
-    <li>gridcerf_airports_3mi_buffer_conus.tif</li>
-    <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
+    <li>gridcerf_airports_faa_8km_buffer_conus.tif</li>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_blm_combined_wind_exclusions.tif</li>
-    <li>gridcerf_blm_historic_landmarks.tif</li>
     <li>gridcerf_state_level_wind_exclusions.tif</li>
     <li>gridcerf_srtm_slope_20pct_or_less.tif</li>
-    <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+    <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
     <li>gridcerf_nrel_wind_onshore_potential_100m_{i}cf.tif</li>
     <li>gridcerf_noaa_radar_stations_5mi_buffer.tif</li>
     <li>gridcerf_landmask_0-land.tif</li>
@@ -4636,13 +4954,16 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
 <b><u>Technology Specific Layers Applied:</u></b>
 <br>
 <ul>
-  <li>gridcerf_airports_3mi_buffer_conus.tif</li>
-  <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
+  <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
+  <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+  <li>gridcerf_blm_historic_parks</li>
+  <li>gridcerf_blm_historic_landmarks</li>
+  <li>gridcerf_blm_national_register_property</li>
+  <li>gridcerf_blm_drecp_wildlife_allocation</li>
   <li>gridcerf_blm_combined_wind_exclusions.tif</li>
-  <li>gridcerf_blm_historic_landmarks.tif</li>
   <li>gridcerf_state_level_wind_exclusions.tif</li>
   <li>gridcerf_srtm_slope_20pct_or_less.tif</li>
-  <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+  <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
   <li>gridcerf_nrel_wind_onshore_potential_120m_{i}cf.tif</li>
   <li>gridcerf_noaa_radar_stations_5mi_buffer.tif</li>
   <li>gridcerf_landmask_0-land.tif</li>
@@ -4678,13 +4999,16 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
       <b><u>Technology Specific Layers Applied:</u></b>
       <br>
       <ul>
-        <li>gridcerf_airports_3mi_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
+        <li>gridcerf_airports_faa_10km_buffer_conus.tif</li>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_blm_combined_wind_exclusions.tif</li>
-        <li>gridcerf_blm_historic_landmarks.tif</li>
         <li>gridcerf_state_level_wind_exclusions.tif</li>
         <li>gridcerf_srtm_slope_20pct_or_less.tif</li>
-        <li>gridcerf_densely_populated_{ssp}_{year}.tif</li>
+        <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
         <li>gridcerf_nrel_wind_onshore_potential_140m_{i}cf.tif</li>
         <li>gridcerf_noaa_radar_stations_5mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
@@ -4696,6 +5020,7 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
       />
   <hr>
   <br>
+  <div id="wind_off_compiled">     
   <h3>Offshore Wind - 100m Hub Height</h3>
   <b><u>GRICERF Layer Name:</u></b> gridcerf_wind_offshore_hubheight100_no-cooling_{i}cf.tif
   <br>
@@ -4720,6 +5045,12 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
   <b><u>Technology Specific Layers Applied:</u></b>
   <br>
   <ul>
+    <li>gridcerf_airports_faa_8km_buffer_conus.tif</li>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_blm_combined_wind_exclusions.tif</li>
     <li>gridcerf_state_level_wind_exclusions.tif</li>
     <li>gridcerf_nrel_wind_offshore_potential_100m_{i}cf.tif</li>
@@ -4765,6 +5096,12 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
   <b><u>Technology Specific Layers Applied:</u></b>
   <br>
   <ul>
+    <li>gridcerf_airports_faa_10km_buffer_conus.tif</li>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_blm_combined_wind_exclusions.tif</li>
     <li>gridcerf_state_level_wind_exclusions.tif</li>
     <li>gridcerf_nrel_wind_offshore_potential_140m_{i}cf.tif</li>
@@ -4810,6 +5147,12 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
   <b><u>Technology Specific Layers Applied:</u></b>
   <br>
   <ul>
+    <li>gridcerf_airports_faa_12km_buffer_conus.tif</li>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_blm_combined_wind_exclusions.tif</li>
     <li>gridcerf_state_level_wind_exclusions.tif</li>
     <li>gridcerf_nrel_wind_offshore_potential_160m_{i}cf.tif</li>

@@ -12,6 +12,12 @@ The following GitHub repository contains the code used to generate the data in t
 archive: <a href="https://github.com/IMMM-SFA/gridcerf">https://github.com/IMMM-SFA/gridcerf</a> 
 <br>
 
+<h4> Accompanying Data Repository</h4>
+
+All compiled raster data for common layers, technology specific layers, and combinations 
+compiled by technology are available for download from MSDLive: <a href=" https://doi.org/10.57931/2281697"> https://doi.org/10.57931/2281697</a> .
+
+<br>
 <h4> Acknowledgements</h4>
 
 GRIDCERF is actively developed as an open-source project as a part of the <a href="https://im3.pnnl.gov/">Integrated Multisector 
@@ -69,7 +75,14 @@ Science as part of research in MultiSector Dynamics, Earth and Environmental Sys
         <span class="title">Common Data Layers</span>
       </a>
       <ul>
+        <li> <a href="#blm_acec"><span class="title"> US Bureau of Land Management Areas of Critical Environmental Concern </span> </a> </li>
+        <li> <a href="#blm_historic_land"><span class="title"> US Bureau of Land Management Historic Landmarks</span> </a> </li>
+        <li> <a href="#blm_historic_park"><span class="title">US Bureau of Land Management Historic Parks </span> </a> </li>
+
+        <li> <a href="#drcep_wild"><span class="title">US Bureau of Land Management DRECP Wildlife Allocations </span> </a> </li>
+
         <li> <a href="#blm_nm"><span class="title">US Bureau of Land Management National Monuments</span></a> </li>
+        <li> <a href="#blm_nat_reg"><span class="title">US Bureau of Land Management National Register Properties</span> </a> </li>
         <li> <a href="#blm_wild"><span class="title">US Bureau of Land Management Wilderness Areas</span></a> </li>
         <li> <a href="#blm_study"><span class="title">US Bureau of Land Management Wilderness Study Areas</span></a> </li>
 
@@ -95,6 +108,7 @@ Science as part of research in MultiSector Dynamics, Earth and Environmental Sys
         <li> <a href="#wetlands"><span class="title">National Land Cover Dataset Wetlands</span></a> </li>
 
         <li> <a href="#wdpa_tnc"><span class="title">WDPA Nature Conservancy Managed Lands</span></a> </li>
+        
 
 
       </ul>
@@ -107,11 +121,6 @@ Science as part of research in MultiSector Dynamics, Earth and Environmental Sys
         <ul>
           <li> <a href="#airports"><span class="title"> Airports</span> </a> </li>
           <li> <a href="#bia"><span class="title">US Bureau of Indian Affairs Adminstrative Areas </span> </a> </li>
-          <li> <a href="#blm_acec"><span class="title"> US Bureau of Land Management Areas of Critical Concern </span> </a> </li>
-          <li> <a href="#drcep_wild"><span class="title">US Bureau of Land Management DRECP Wildlife Allocations </span> </a> </li>
-          <li> <a href="#blm_historic_land"><span class="title"> US Bureau of Land Management Historic Landmarks</span> </a> </li>
-          <li> <a href="#blm_historic_park"><span class="title">US Bureau of Land Management Historic Parks </span> </a> </li>
-          <li> <a href="#blm_nat_reg"><span class="title">US Bureau of Land Management National Register Properties</span> </a> </li>
           <li> <a href="#blm_solar"><span class="title">US Bureau of Land Management Solar Development Restrictions  </span></a> </li>
           <li> <a href="#blm_wind"><span class="title"> US Bureau of Land Management Wind Development Restrictions</span> </a> </li>
           <li> <a href="#carbon_capture"><span class="title">Carbon Capture Sequestration Storage Areas</span> </a> </li>
@@ -325,6 +334,149 @@ layers and allows for user customization to robustly address science objectives 
   width="1000" 
   />
 
+  <br>
+  <div id="blm_acec">
+    <h3>US Bureau of Land Management Areas of Critical Environmental Concern</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>BLM Natl Designated Areas of Critical Environmental Concern Polygons
+        <br>
+        <b><u>Description from Source:</u></b>
+        This polygon feature class shows the spatial extent and boundaries of Areas of Critical Environmental Concern that have become officially designated by the BLM. In general, the ACEC dataset defines areas within the public lands where special management attention is required to protect and prevent irreparable damage to important historic, cultural, or scenic values, fish and wildlife resources or other natural systems or processes, or to protect life and safety from natural hazards.
+
+        This polygon feature class shows the spatial extent and boundaries of Areas of Critical Environmental Concern that have become officially designated by the BLM. These polygon features were previously in a pre-designated status (i.e. being considered as areas to be eventually designated as official ACEC designated polygons). Once these polygon feature left the Pre-Designated phase (transitioned from a Considered to Designated status), they were removed from the ACEC Pre-designated polygon feature class and placed in this ACEC Designated polygon feature class. This dataset is a subset of the official national dataset, containing features and attributes intended for public release and has been optimized for online map service performance. The Implementation Guide represents the official national dataset from which this dataset was derived.        <b><u>Source Data Downloaded from:</u></b> <a href=  https://gbp-blm-egis.hub.arcgis.com/datasets/blm-natl-designated-areas-of-critical-environmental-concern-polygons/about>  https://gbp-blm-egis.hub.arcgis.com/datasets/blm-natl-designated-areas-of-critical-environmental-concern-polygons/about</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 09/18/2023
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          US Bureau of Land Management, 2023. BLM Natl Designated Areas of Critical Environmental Concern Polygons West-Wide Wind Mapping Project Maps and Data, https://www.arcgis.com/sharing/rest/content/items/11c9e34831c7446a8202b334bc64898a/data
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+  <img src="raster_images/gridcerf_blm_areas_of_critical_environmental_concern.jpg"
+  width="1000" 
+  title="gridcerf_blm_areas_of_critical_environmental_concern"
+  />
+<br>
+
+<br>
+  <div id="drcep_wild">
+    <h3>US Burea of Land Management Desert Renewable Energy Conservation Plan (DRECP) Wildlife Allocations</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_drecp_wildlife_allocation.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+      <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Ecological Resources
+      <br>
+      <b><u>Description from Source:</u></b>
+      This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
+      <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
+      <br>
+      <b><u>Source Data Last Updated on:</u></b> 09/2016
+      <br>
+      <b><u>Source Data Accessed on:</u></b>  9/26/23
+      <br>
+      <b><u>Source Data Citation:</u></b>
+      <cite>
+        Argonne National Laboratory, 2016. Ecological Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Ecological_Resources.zip
+              </cite>  <br>
+    </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The drecp_wildlife_allocation shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+  <img src="raster_images/gridcerf_blm_drecp_wildlife_allocation.jpg"
+  width="1000" 
+  title="gridcerf_blm_drecp_wildlife_allocation"
+  />
+
+<br>
+  <div id="blm_historic_land">
+    <h3>US Bureau of Land Management Historic Landmarks</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_historic_landmarks.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Cultural Resources
+        <br>
+        <b><u>Description from Source:</u></b>
+        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 09/2016
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          Argonne National Laboratory, 2016. Cultural Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Cultural_Resources.zip
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The national_historic_landmark shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+  <img src="raster_images/gridcerf_blm_historic_landmarks.jpg"
+  width="1000" 
+  title="gridcerf_blm_historic_landmarks"
+  />
+<br>
+
+<br>
+  <div id="blm_historic_park">
+    <h3>US Bureau of Land Management Historic Parks</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_historic_parks.tif</li>
+    </ul>
+
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Cultural Resources
+        <br>
+        <b><u>Description from Source:</u></b>
+        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 09/2016
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          Argonne National Laboratory, 2016. Cultural Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Cultural_Resources.zip
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The national_historic_park shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+  <img src="raster_images/gridcerf_blm_historic_parks.jpg"
+  width="1000" 
+  title="gridcerf_blm_historic_parks"
+  />
+<br>
+
+
 
   <div id="blm_nm">
     <h3>US Bureau of Land Management National Monuments</h3>
@@ -356,7 +508,41 @@ layers and allows for user customization to robustly address science objectives 
       width="1000" 
       />
   <br>
+  <br>
+  <div id="blm_nat_reg">
+    <h3>US Bureau of Land Management National Register Properties</h3>
+    <b><u>GRIDCERF Layer Name(s):</u></b> 
+    <ul>
+      <li>gridcerf_blm_national_register_property.tif</li>
+    </ul>
 
+    <b><u>Source Data:</u></b>
+    <br>
+      <ol>
+        <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Cultural Resources
+        <br>
+        <b><u>Description from Source:</u></b>
+        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
+        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
+        <br>
+        <b><u>Source Data Last Updated on:</u></b> 09/2016
+        <br>
+        <b><u>Source Data Accessed on:</u></b>  9/26/23
+        <br>
+        <b><u>Source Data Citation:</u></b>
+        <cite>
+          Argonne National Laboratory, 2016. Cultural Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Cultural_Resources.zip
+                </cite>  <br>
+      </ol>
+      
+    <b><u>Data Layer Methodology:</u></b> The national_register_property shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
+
+  </div>
+  <img src="raster_images/gridcerf_blm_national_register_property.jpg"
+  width="1000" 
+  title="gridcerf_blm_national_register_property"
+  />
+<br>
   <br>
   <div id="blm_wild">
     <h3>US Bureau of Land Management Wilderness Areas</h3>
@@ -871,6 +1057,8 @@ width="1000"
     <img src="raster_images/gridcerf_wdpa_tnc_managed_lands_conus.jpg"
     width="1000" 
     /> 
+
+
   </div>
 
 </div>
@@ -971,183 +1159,7 @@ width="1000"
   />
 <br>
 
-<br>
-  <div id="blm_acec">
-    <h3>US Bureau of Land Management Areas of Critical Environmental Concern</h3>
-    <b><u>GRIDCERF Layer Name(s):</u></b> 
-    <ul>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
-    </ul>
 
-    <b><u>Source Data:</u></b>
-    <br>
-      <ol>
-        <b><u>Source Data Title:</u></b>BLM Natl Designated Areas of Critical Environmental Concern Polygons
-        <br>
-        <b><u>Description from Source:</u></b>
-        This polygon feature class shows the spatial extent and boundaries of Areas of Critical Environmental Concern that have become officially designated by the BLM. In general, the ACEC dataset defines areas within the public lands where special management attention is required to protect and prevent irreparable damage to important historic, cultural, or scenic values, fish and wildlife resources or other natural systems or processes, or to protect life and safety from natural hazards.
-
-        This polygon feature class shows the spatial extent and boundaries of Areas of Critical Environmental Concern that have become officially designated by the BLM. These polygon features were previously in a pre-designated status (i.e. being considered as areas to be eventually designated as official ACEC designated polygons). Once these polygon feature left the Pre-Designated phase (transitioned from a Considered to Designated status), they were removed from the ACEC Pre-designated polygon feature class and placed in this ACEC Designated polygon feature class. This dataset is a subset of the official national dataset, containing features and attributes intended for public release and has been optimized for online map service performance. The Implementation Guide represents the official national dataset from which this dataset was derived.        <b><u>Source Data Downloaded from:</u></b> <a href=  https://gbp-blm-egis.hub.arcgis.com/datasets/blm-natl-designated-areas-of-critical-environmental-concern-polygons/about>  https://gbp-blm-egis.hub.arcgis.com/datasets/blm-natl-designated-areas-of-critical-environmental-concern-polygons/about</a>
-        <br>
-        <b><u>Source Data Last Updated on:</u></b> 09/18/2023
-        <br>
-        <b><u>Source Data Accessed on:</u></b>  9/26/23
-        <br>
-        <b><u>Source Data Citation:</u></b>
-        <cite>
-          US Bureau of Land Management, 2023. BLM Natl Designated Areas of Critical Environmental Concern Polygons West-Wide Wind Mapping Project Maps and Data, https://www.arcgis.com/sharing/rest/content/items/11c9e34831c7446a8202b334bc64898a/data
-                </cite>  <br>
-      </ol>
-      
-    <b><u>Data Layer Methodology:</u></b> Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
-
-  </div>
-  <img src="raster_images/gridcerf_blm_areas_of_critical_environmental_concern.jpg"
-  width="1000" 
-  title="gridcerf_blm_areas_of_critical_environmental_concern"
-  />
-<br>
-
-<br>
-  <div id="drcep_wild">
-    <h3>US Burea of Land Management Desert Renewable Energy Conservation Plan (DRECP) Wildlife Allocations</h3>
-    <b><u>GRIDCERF Layer Name(s):</u></b> 
-    <ul>
-      <li>gridcerf_blm_drecp_wildlife_allocation.tif</li>
-    </ul>
-
-    <b><u>Source Data:</u></b>
-      <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Ecological Resources
-      <br>
-      <b><u>Description from Source:</u></b>
-      This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
-      <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
-      <br>
-      <b><u>Source Data Last Updated on:</u></b> 09/2016
-      <br>
-      <b><u>Source Data Accessed on:</u></b>  9/26/23
-      <br>
-      <b><u>Source Data Citation:</u></b>
-      <cite>
-        Argonne National Laboratory, 2016. Ecological Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Ecological_Resources.zip
-              </cite>  <br>
-    </ol>
-      
-    <b><u>Data Layer Methodology:</u></b> The drecp_wildlife_allocation shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
-
-  </div>
-  <img src="raster_images/gridcerf_blm_drecp_wildlife_allocation.jpg"
-  width="1000" 
-  title="gridcerf_blm_drecp_wildlife_allocation"
-  />
-
-<br>
-  <div id="blm_historic_land">
-    <h3>US Bureau of Land Management Historic Landmarks</h3>
-    <b><u>GRIDCERF Layer Name(s):</u></b> 
-    <ul>
-      <li>gridcerf_blm_historic_landmarks.tif</li>
-    </ul>
-
-    <b><u>Source Data:</u></b>
-    <br>
-      <ol>
-        <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Cultural Resources
-        <br>
-        <b><u>Description from Source:</u></b>
-        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
-        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
-        <br>
-        <b><u>Source Data Last Updated on:</u></b> 09/2016
-        <br>
-        <b><u>Source Data Accessed on:</u></b>  9/26/23
-        <br>
-        <b><u>Source Data Citation:</u></b>
-        <cite>
-          Argonne National Laboratory, 2016. Cultural Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Cultural_Resources.zip
-                </cite>  <br>
-      </ol>
-      
-    <b><u>Data Layer Methodology:</u></b> The national_historic_landmark shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
-
-  </div>
-  <img src="raster_images/gridcerf_blm_historic_landmarks.jpg"
-  width="1000" 
-  title="gridcerf_blm_historic_landmarks"
-  />
-<br>
-
-<br>
-  <div id="blm_historic_park">
-    <h3>US Bureau of Land Management Historic Parks</h3>
-    <b><u>GRIDCERF Layer Name(s):</u></b> 
-    <ul>
-      <li>gridcerf_blm_historic_parks.tif</li>
-    </ul>
-
-    <b><u>Source Data:</u></b>
-    <br>
-      <ol>
-        <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Cultural Resources
-        <br>
-        <b><u>Description from Source:</u></b>
-        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
-        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
-        <br>
-        <b><u>Source Data Last Updated on:</u></b> 09/2016
-        <br>
-        <b><u>Source Data Accessed on:</u></b>  9/26/23
-        <br>
-        <b><u>Source Data Citation:</u></b>
-        <cite>
-          Argonne National Laboratory, 2016. Cultural Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Cultural_Resources.zip
-                </cite>  <br>
-      </ol>
-      
-    <b><u>Data Layer Methodology:</u></b> The national_historic_park shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
-
-  </div>
-  <img src="raster_images/gridcerf_blm_historic_parks.jpg"
-  width="1000" 
-  title="gridcerf_blm_historic_parks"
-  />
-<br>
-
-<br>
-  <div id="blm_nat_reg">
-    <h3>US Bureau of Land Management National Register Properties</h3>
-    <b><u>GRIDCERF Layer Name(s):</u></b> 
-    <ul>
-      <li>gridcerf_blm_national_register_property.tif</li>
-    </ul>
-
-    <b><u>Source Data:</u></b>
-    <br>
-      <ol>
-        <b><u>Source Data Title:</u></b>West Wide Wind Mapping Project: Cultural Resources
-        <br>
-        <b><u>Description from Source:</u></b>
-        This download includes key layers used in the West-Wide Wind Mapping Project in Esri File Geodatabase format, which is the native format used in the project.        <br>
-        <b><u>Source Data Downloaded from:</u></b> <a href=  https://wwmp.anl.gov/maps-data/>  https://wwmp.anl.gov/maps-data/</a>
-        <br>
-        <b><u>Source Data Last Updated on:</u></b> 09/2016
-        <br>
-        <b><u>Source Data Accessed on:</u></b>  9/26/23
-        <br>
-        <b><u>Source Data Citation:</u></b>
-        <cite>
-          Argonne National Laboratory, 2016. Cultural Resources. West-Wide Wind Mapping Project Maps and Data, https://wwmp.anl.gov/downloads/gis/Individual_Cultural_Resources.zip
-                </cite>  <br>
-      </ol>
-      
-    <b><u>Data Layer Methodology:</u></b> The national_register_property shapefile was used from the dataset to compile the raster. Data was reprojected to the NAD 1983 Albers contiguous USA (ESRI:102003) coordinate reference system prior to rasterization. No additional buffers or modifications were applied.
-
-  </div>
-  <img src="raster_images/gridcerf_blm_national_register_property.jpg"
-  width="1000" 
-  title="gridcerf_blm_national_register_property"
-  />
-<br>
 
 <br>
   <div id="blm_solar">
@@ -2880,11 +2892,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -2908,11 +2915,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -2935,17 +2937,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
-        <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
-        <li>gridcerf_nhd2plus_surfaceflow_greaterthan20mgd_buffer20km.tif</li>
+        <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
       </ul>
@@ -2963,11 +2959,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -2990,11 +2981,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3016,11 +3002,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3042,11 +3023,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3068,16 +3044,10 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
-        <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
-        <li>gridcerf_nhd2plus_surfaceflow_greaterthan15mgd_buffer20km.tif</li>
+        <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
       </ul>
@@ -3095,11 +3065,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3121,11 +3086,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3148,11 +3108,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3175,11 +3130,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3202,17 +3152,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
-        <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
-        <li>gridcerf_nhd2plus_surfaceflow_greaterthan20mgd_buffer20km.tif</li>
+        <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
       </ul>
@@ -3230,11 +3174,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3256,11 +3195,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3282,11 +3216,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3308,16 +3237,10 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
-        <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
-        <li>gridcerf_nhd2plus_surfaceflow_greaterthan70mgd_buffer20km.tif</li>
+        <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
       </ul>
@@ -3338,11 +3261,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3365,11 +3283,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3392,17 +3305,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
-        <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
-        <li>gridcerf_nhd2plus_surfaceflow_greaterthan200mgd_buffer20km.tif</li>
+        <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
       </ul>
@@ -3420,11 +3327,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3447,11 +3349,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3473,11 +3370,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3499,11 +3391,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3525,16 +3412,10 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
-        <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
-        <li>gridcerf_nhd2plus_surfaceflow_greaterthan200mgd_buffer20km.tif</li>
+        <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
 
@@ -3553,11 +3434,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3579,11 +3455,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3606,11 +3477,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3634,17 +3500,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
         <li>gridcerf_carbon_capture_storage_suitability.tif</li>
-        <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
-        <li>gridcerf_nhd2plus_surfaceflow_greaterthan145mgd_buffer20km.tif</li>
+        <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
       </ul>
@@ -3662,11 +3522,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3689,11 +3544,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3715,11 +3565,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3741,16 +3586,10 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
-        <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
-        <li>gridcerf_nhd2plus_surfaceflow_greaterthan7000mgd_buffer20km.tif</li>
+        <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
         <li>gridcerf_landmask_0-land.tif</li>
 
       </ul>
@@ -3768,11 +3607,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_coalmines20km_railnodes5km_navwaters5km_conus.tif</li>
         <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
         <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
@@ -3793,6 +3627,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <b><u>Common Layers Applied:</u></b>
     <ul>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
       <li>gridcerf_nps_historic_trails_conus.tif</li>
       <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -3813,15 +3652,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation.tif</li>
-      <li>gridcerf_blm_historic_landmarks.tif</li>
-      <li>gridcerf_blm_historic_parks.tif</li>
       <li>gridcerf_state_level_geothermal_exclusions.tif</li>
       <li>gridcerf_srtm_slope_30pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
@@ -3841,6 +3671,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <b><u>Common Layers Applied:</u></b>
     <ul>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
       <li>gridcerf_nps_historic_trails_conus.tif</li>
       <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -3861,15 +3696,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation.tif</li>
-      <li>gridcerf_blm_historic_landmarks.tif</li>
-      <li>gridcerf_blm_historic_parks.tif</li>
       <li>gridcerf_state_level_geothermal_exclusions.tif</li>
       <li>gridcerf_srtm_slope_30pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
@@ -3896,11 +3722,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan25mgd_buffer20km.tif</li>
@@ -3922,11 +3743,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan3000mgd_buffer20km.tif</li>
@@ -3948,11 +3764,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan120mgd_buffer20km.tif</li>
@@ -3974,15 +3785,9 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
-      <li>gridcerf_nhd2plus_surfaceflow_greaterthan120mgd_buffer20km.tif</li>
-      <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
+      <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
@@ -4002,11 +3807,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan5mgd_buffer20km.tif</li>
@@ -4027,11 +3827,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan3000mgd_buffer20km.tif</li>
@@ -4052,11 +3847,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan1000mgd_buffer20km.tif</li>
@@ -4078,11 +3868,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
       <li>gridcerf_nhd2plus_surfaceflow_greaterthan70mgd_buffer20km.tif</li>
@@ -4103,15 +3888,9 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi_25buffer.tif</li>
-      <li>gridcerf_nhd2plus_surfaceflow_greaterthan70mgd_buffer20km.tif</li>
-      <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
+      <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
@@ -4129,11 +3908,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_no_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
@@ -4147,7 +3921,7 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
 <h2>Nuclear</h2>
 
 <h3>Nuclear Gen 3 AP1000 Oncethrough Cooling </h3>
-  <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_ap1000_oncethrough.tif
+  <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_ap1000_oncethrough.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4155,11 +3929,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
@@ -4168,13 +3937,13 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_ap1000_oncethrough.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen3_ap1000_oncethrough.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen3_ap1000_oncethrough"
+    title="gridcerf_nuclear_gen3_ap1000_oncethrough"
     />
 <hr>
 <h3>Nuclear Gen 3 AP1000 Pond Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_ap1000_pond.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_ap1000_pond.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4182,11 +3951,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
@@ -4195,12 +3959,12 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_ap1000_pond.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen3_ap1000_pond.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen3_ap1000_pond"
+    title="gridcerf_nuclear_gen3_ap1000_pond"
     />
 <h3>Nuclear Gen 3 AP1000 Recirculating Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_ap1000_recirculating.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4208,11 +3972,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
@@ -4221,12 +3980,12 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen3_ap1000_recirculating.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating"
+    title="gridcerf_nuclear_gen3_ap1000_recirculating"
     />
 <h3>Nuclear Gen 3 AP1000 Recirculating-Seawater Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating-seawater.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_ap1000_recirculating-seawater.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4234,26 +3993,20 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
-      <li>gridcerf_nhd2plus_surfaceflow_greaterthan1000mgd_buffer20km.tif</li>
-      <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
+      <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating-seawater.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen3_ap1000_recirculating-seawater.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen3_ap1000_recirculating-seawater"
+    title="gridcerf_nuclear_gen3_ap1000_recirculating-seawater"
     />
 <h3>Nuclear Gen 3 Small Modular Reactor (SMR) Oncethrough Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_smr_oncethrough.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_smr_oncethrough.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4261,11 +4014,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
@@ -4274,12 +4022,12 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_smr_oncethrough.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen3_smr_oncethrough.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen3_smr_oncethrough"
+    title="gridcerf_nuclear_gen3_smr_oncethrough"
     />
 <h3>Nuclear Gen 3 SMR Pond Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_smr_pond.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_smr_pond.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4287,11 +4035,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
@@ -4300,12 +4043,12 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_smr_pond.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen3_smr_pond.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen3_smr_pond"
+    title="gridcerf_nuclear_gen3_smr_pond"
     />
 <h3>Nuclear Gen 3 SMR Recirculating Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_smr_recirculating.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_smr_recirculating.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4313,11 +4056,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
@@ -4326,12 +4064,12 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_smr_recirculating.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen3_smr_recirculating.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen3_smr_recirculating"
+    title="gridcerf_nuclear_gen3_smr_recirculating"
     />
 <h3>Nuclear Gen 3 SMR Recirculating-Seawater Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen3_smr_recirculating-seawater.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen3_smr_recirculating-seawater.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4339,26 +4077,20 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
-      <li>gridcerf_nhd2plus_surfaceflow_greaterthan200mgd_buffer20km.tif</li>
-      <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
+      <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen3_smr_recirculating-seawater.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen3_smr_recirculating-seawater.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen3_smr_recirculating-seawater"
+    title="gridcerf_nuclear_gen3_smr_recirculating-seawater"
     />
 <h3>Nuclear Gen 2 Light Water Reactor (LWR) Oncethrough Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen2_lwr_oncethrough.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen2_lwr_oncethrough.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4366,11 +4098,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
@@ -4379,12 +4106,12 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen2_lwr_oncethrough.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen2_lwr_oncethrough.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen2_lwr_oncethrough"
+    title="gridcerf_nuclear_gen2_lwr_oncethrough"
     />
 <h3>Nuclear Gen 2 LWR Pond Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen2_lwr_pond.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen2_lwr_pond.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4392,11 +4119,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
@@ -4405,12 +4127,12 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen2_lwr_pond.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen2_lwr_pond.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen2_lwr_pond"
+    title="gridcerf_nuclear_gen2_lwr_pond"
     />
 <h3>Nuclear Gen 2 LWR Recirculating Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen2_lwr_recirculating.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen2_lwr_recirculating.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4418,11 +4140,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
@@ -4431,12 +4148,12 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen2_lwr_recirculating.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen2_lwr_recirculating.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen2_lwr_recirculating"
+    title="gridcerf_nuclear_gen2_lwr_recirculating"
     />
 <h3>Nuclear Gen 2 LWR Recirculating-Seawater Cooling </h3>
-    <b><u>GRICERF Layer Name:</u></b> gridcerf_1km_conus_nuclear_gen2_lwr_recirculating-seawater.tif
+    <b><u>GRICERF Layer Name:</u></b> gridcerf_nuclear_gen2_lwr_recirculating-seawater.tif
     <br>
     <b><u>Common Layers Applied:</u></b> All 
     <br>
@@ -4444,23 +4161,17 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_usgs_earthquake_pga_0.3_at_2pct_in_50yrs_conus</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_population_1km_conus_nuclear_{ssp}_{year}.tif</li>
-      <li>gridcerf_nhd2plus_surfaceflow_greaterthan1000mgd_buffer20km.tif</li>
-      <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
+      <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
-    <img src="raster_images/gridcerf_1km_conus_nuclear_gen2_lwr_recirculating-seawater.jpg"
+    <img src="raster_images/gridcerf_nuclear_gen2_lwr_recirculating-seawater.jpg"
     width="1000" 
-    title="gridcerf_1km_conus_nuclear_gen2_lwr_recirculating-seawater"
+    title="gridcerf_nuclear_gen2_lwr_recirculating-seawater"
     />
 
 <div id="refined_compiled">     
@@ -4475,11 +4186,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
@@ -4501,11 +4207,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
@@ -4527,16 +4228,10 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
-      <li>gridcerf_nhd2plus_surfaceflow_greaterthan55mgd_buffer20km.tif</li>
-      <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
+      <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
       <li>gridcerf_carbon_capture_storage_suitability.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
@@ -4554,11 +4249,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
@@ -4580,11 +4270,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
@@ -4605,11 +4290,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
@@ -4630,16 +4310,10 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
-      <li>gridcerf_nhd2plus_surfaceflow_greaterthan40mgd_buffer20km.tif</li>
-      <li>gridcerf_seawater_proximity_2km_buffer.tif</li>
+      <li>gridcerf_seawater_proximity_20mi_buffer.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
 
     </ul>
@@ -4656,11 +4330,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_13km_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_population_{ssp}_{year}_1km_conus_50k_per25sqmi.tif</li>
@@ -4681,11 +4350,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_no_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_srtm_slope_12pct_or_less.tif</li>
       <li>gridcerf_ntad_railnodes_navwaters_greaterthan5km.tif</li>
       <li>gridcerf_landmask_0-land.tif</li>
@@ -4703,6 +4367,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <b><u>Common Layers Applied:</u></b>
       <ul>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
         <li>gridcerf_nps_historic_trails_conus.tif</li>
         <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -4723,12 +4392,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_12km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
         <li>gridcerf_blm_combined_solar_exclusions.tif</li>
         <li>gridcerf_state_level_solar_exclusions.tif</li>
         <li>gridcerf_srtm_slope_5pct_or_less.tif</li>
@@ -4749,6 +4412,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
   <br>
   <b><u>Common Layers Applied:</u></b>
   <ul>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
     <li>gridcerf_nps_historic_trails_conus.tif</li>
     <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -4769,12 +4437,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
   <br>
   <ul>
     <li>gridcerf_airports_faa_12km_buffer_conus.tif</li>
-    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-    <li>gridcerf_blm_historic_parks</li>
-    <li>gridcerf_blm_historic_landmarks</li>
-    <li>gridcerf_blm_national_register_property</li>
-    <li>gridcerf_blm_drecp_wildlife_allocation</li>
-    <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
     <li>gridcerf_blm_combined_solar_exclusions.tif</li>
     <li>gridcerf_state_level_solar_exclusions.tif</li>
     <li>gridcerf_srtm_slope_5pct_or_less.tif</li>
@@ -4796,6 +4458,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <b><u>Common Layers Applied:</u></b>
     <ul>
+      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+      <li>gridcerf_blm_historic_parks</li>
+      <li>gridcerf_blm_historic_landmarks</li>
+      <li>gridcerf_blm_national_register_property</li>
+      <li>gridcerf_blm_drecp_wildlife_allocation</li>
       <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
       <li>gridcerf_nps_historic_trails_conus.tif</li>
       <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -4816,13 +4483,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
     <br>
     <ul>
       <li>gridcerf_airports_faa_no_buffer_conus.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-      <li>gridcerf_blm_historic_parks</li>
-      <li>gridcerf_blm_historic_landmarks</li>
-      <li>gridcerf_blm_national_register_property</li>
-      <li>gridcerf_blm_drecp_wildlife_allocation</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
-      <li>gridcerf_blm_areas_of_critical_environmental_concern.tif</li>
       <li>gridcerf_blm_combined_solar_exclusions.tif</li>
       <li>gridcerf_state_level_solar_exclusions.tif</li>
       <li>gridcerf_srtm_slope_5pct_or_less.tif</li>
@@ -4844,6 +4504,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <b><u>Common Layers Applied:</u></b>
       <ul>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
         <li>gridcerf_nps_historic_trails_conus.tif</li>
         <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -4864,11 +4529,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_7km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_blm_combined_wind_exclusions.tif</li>
         <li>gridcerf_state_level_wind_exclusions.tif</li>
         <li>gridcerf_srtm_slope_20pct_or_less.tif</li>
@@ -4889,6 +4549,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
   <br>
   <b><u>Common Layers Applied:</u></b>
   <ul>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
     <li>gridcerf_nps_historic_trails_conus.tif</li>
     <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -4909,11 +4574,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
   <br>
   <ul>
     <li>gridcerf_airports_faa_8km_buffer_conus.tif</li>
-    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-    <li>gridcerf_blm_historic_parks</li>
-    <li>gridcerf_blm_historic_landmarks</li>
-    <li>gridcerf_blm_national_register_property</li>
-    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_blm_combined_wind_exclusions.tif</li>
     <li>gridcerf_state_level_wind_exclusions.tif</li>
     <li>gridcerf_srtm_slope_20pct_or_less.tif</li>
@@ -4935,6 +4595,11 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
 <br>
 <b><u>Common Layers Applied:</u></b>
 <ul>
+  <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+  <li>gridcerf_blm_historic_parks</li>
+  <li>gridcerf_blm_historic_landmarks</li>
+  <li>gridcerf_blm_national_register_property</li>
+  <li>gridcerf_blm_drecp_wildlife_allocation</li>
   <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
   <li>gridcerf_nps_historic_trails_conus.tif</li>
   <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -4955,11 +4620,6 @@ title="gridcerf_nrel_wind_onshore_potential_100m_20cf"
 <br>
 <ul>
   <li>gridcerf_airports_faa_9km_buffer_conus.tif</li>
-  <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-  <li>gridcerf_blm_historic_parks</li>
-  <li>gridcerf_blm_historic_landmarks</li>
-  <li>gridcerf_blm_national_register_property</li>
-  <li>gridcerf_blm_drecp_wildlife_allocation</li>
   <li>gridcerf_blm_combined_wind_exclusions.tif</li>
   <li>gridcerf_state_level_wind_exclusions.tif</li>
   <li>gridcerf_srtm_slope_20pct_or_less.tif</li>
@@ -4980,6 +4640,11 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
       <br>
       <b><u>Common Layers Applied:</u></b>
       <ul>
+        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+        <li>gridcerf_blm_historic_parks</li>
+        <li>gridcerf_blm_historic_landmarks</li>
+        <li>gridcerf_blm_national_register_property</li>
+        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
         <li>gridcerf_nps_historic_trails_conus.tif</li>
         <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -5000,11 +4665,6 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
       <br>
       <ul>
         <li>gridcerf_airports_faa_10km_buffer_conus.tif</li>
-        <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-        <li>gridcerf_blm_historic_parks</li>
-        <li>gridcerf_blm_historic_landmarks</li>
-        <li>gridcerf_blm_national_register_property</li>
-        <li>gridcerf_blm_drecp_wildlife_allocation</li>
         <li>gridcerf_blm_combined_wind_exclusions.tif</li>
         <li>gridcerf_state_level_wind_exclusions.tif</li>
         <li>gridcerf_srtm_slope_20pct_or_less.tif</li>
@@ -5026,6 +4686,11 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
   <br>
   <b><u>Common Layers Applied:</u></b>
   <ul>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
     <li>gridcerf_nps_historic_trails_conus.tif</li>
     <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -5046,11 +4711,6 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
   <br>
   <ul>
     <li>gridcerf_airports_faa_8km_buffer_conus.tif</li>
-    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-    <li>gridcerf_blm_historic_parks</li>
-    <li>gridcerf_blm_historic_landmarks</li>
-    <li>gridcerf_blm_national_register_property</li>
-    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_blm_combined_wind_exclusions.tif</li>
     <li>gridcerf_state_level_wind_exclusions.tif</li>
     <li>gridcerf_nrel_wind_offshore_potential_100m_{i}cf.tif</li>
@@ -5077,6 +4737,11 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
   <br>
   <b><u>Common Layers Applied:</u></b>
   <ul>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
     <li>gridcerf_nps_historic_trails_conus.tif</li>
     <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -5097,11 +4762,6 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
   <br>
   <ul>
     <li>gridcerf_airports_faa_10km_buffer_conus.tif</li>
-    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-    <li>gridcerf_blm_historic_parks</li>
-    <li>gridcerf_blm_historic_landmarks</li>
-    <li>gridcerf_blm_national_register_property</li>
-    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_blm_combined_wind_exclusions.tif</li>
     <li>gridcerf_state_level_wind_exclusions.tif</li>
     <li>gridcerf_nrel_wind_offshore_potential_140m_{i}cf.tif</li>
@@ -5128,6 +4788,11 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
   <br>
   <b><u>Common Layers Applied:</u></b>
   <ul>
+    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
+    <li>gridcerf_blm_historic_parks</li>
+    <li>gridcerf_blm_historic_landmarks</li>
+    <li>gridcerf_blm_national_register_property</li>
+    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_nps_administrative_boundaries_conus.tif</li>
     <li>gridcerf_nps_historic_trails_conus.tif</li>
     <li>gridcerf_nps_scenic_trails_conus.tif</li>
@@ -5148,11 +4813,6 @@ title="gridcerf_wind_onshore_hubheight120_no-cooling_30cf"
   <br>
   <ul>
     <li>gridcerf_airports_faa_12km_buffer_conus.tif</li>
-    <li>gridcerf_blm_areas_of_critical_environmental_concern</li>
-    <li>gridcerf_blm_historic_parks</li>
-    <li>gridcerf_blm_historic_landmarks</li>
-    <li>gridcerf_blm_national_register_property</li>
-    <li>gridcerf_blm_drecp_wildlife_allocation</li>
     <li>gridcerf_blm_combined_wind_exclusions.tif</li>
     <li>gridcerf_state_level_wind_exclusions.tif</li>
     <li>gridcerf_nrel_wind_offshore_potential_160m_{i}cf.tif</li>

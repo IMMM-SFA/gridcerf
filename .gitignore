@@ -1,5 +1,19 @@
 # system
 .DS_Store
+__MACOSX
+
+# data
+*.zip
+data/gridcerf/
+data/*.csv
+data/*.zip
+data/*.tif
+data/*.cpg
+data/*.dbf
+data/*.prj
+data/*.shp
+data/*.shx
+data/*.xml
 
 # pyenv
 .python-version

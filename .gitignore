@@ -15,6 +15,10 @@ data/*.shp
 data/*.shx
 data/*.xml
 
+# helper notebooks
+notebooks/create_raster_images.ipynb
+notebooks/create_metadata.ipynb
+
 # pyenv
 .python-version
 

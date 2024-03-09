@@ -1,3 +1,27 @@
+# system
+.DS_Store
+__MACOSX
+
+# data
+*.zip
+data/gridcerf/
+data/*.csv
+data/*.zip
+data/*.tif
+data/*.cpg
+data/*.dbf
+data/*.prj
+data/*.shp
+data/*.shx
+data/*.xml
+
+# helper notebooks
+notebooks/create_raster_images.ipynb
+notebooks/create_metadata.ipynb
+
+# pyenv
+.python-version
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -237,3 +261,13 @@ fabric.properties
 
 .idea/
 .DS_Store
+
+
+data/gridcerf/reference/
+data/gridcerf/technology_specific/
+data/gridcerf/source
+data/gridcerf/compiled
+notebooks/template.ipynb
+*.tif
+*.xml
+*.jpg
